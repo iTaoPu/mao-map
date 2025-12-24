@@ -4,6 +4,110 @@
  * GitHub: https://github.com/sansan0/mao-map
  */
 
+// ==================== i18n 国际化 ====================
+/**
+ * 初始化多语言支持
+ */
+async function initI18n() {
+  try {
+    // 获取首选语言
+    const preferredLocale = i18n.getPreferredLocale();
+    console.log('检测到首选语言:', preferredLocale);
+
+    // 加载首选语言包
+    await i18n.loadLocale(preferredLocale);
+    await i18n.setLocale(preferredLocale);
+
+    // 初始化语言切换按钮
+    initLanguageSelector();
+
+    console.log('i18n 初始化完成, 当前语言:', i18n.getCurrentLocale());
+  } catch (error) {
+    console.error('i18n 初始化失败:', error);
+  }
+}
+
+/**
+ * 初始化语言选择器
+ */
+function initLanguageSelector() {
+  const langButtons = document.querySelectorAll('.lang-btn');
+
+  langButtons.forEach(btn => {
+    const lang = btn.getAttribute('data-lang');
+
+    // 设置初始激活状态
+    if (lang === i18n.getCurrentLocale()) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+
+    // 绑定点击事件
+    btn.addEventListener('click', async () => {
+      const selectedLang = btn.getAttribute('data-lang');
+
+      // 更新按钮状态
+      langButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // 保存当前事件索引，用于语言切换后恢复位置
+      const savedEventIndex = currentEventIndex;
+
+      // 切换语言
+      await i18n.setLocale(selectedLang);
+
+      console.log('语言已切换至:', selectedLang);
+
+      // 重新加载事件数据
+      try {
+        trajectoryData = await loadTrajectoryData();
+
+        // 更新时间轴滑块的最大值
+        const slider = document.getElementById('timeline-slider');
+        if (slider && trajectoryData && trajectoryData.events) {
+          slider.max = trajectoryData.events.length - 1;
+        }
+
+        // 更新总事件数显示
+        const totalCountEls = document.querySelectorAll('[id^="total-event-count"]');
+        totalCountEls.forEach((el) => {
+          if (el && trajectoryData) el.textContent = trajectoryData.events.length;
+        });
+
+        // 清除所有现有的标记和路径
+        eventMarkers.forEach((marker) => map.removeLayer(marker));
+        eventMarkers = [];
+        locationMarkers.clear();
+        pathLayers.forEach((path) => {
+          if (path._map) map.removeLayer(path);
+        });
+        pathLayers = [];
+        motionPaths.clear();
+
+        // 恢复到之前保存的事件索引位置
+        // 确保索引在有效范围内
+        const restoredIndex = Math.min(savedEventIndex, trajectoryData.events.length - 1);
+        currentEventIndex = restoredIndex;
+        previousEventIndex = Math.max(0, restoredIndex - 1);
+        showEventAtIndex(restoredIndex, false);
+
+        // 更新统计信息
+        updateStatistics();
+
+        console.log('语言切换完成，恢复到事件索引:', restoredIndex);
+      } catch (error) {
+        console.error('重新加载事件数据失败:', error);
+      }
+
+      // 更新速度下拉选择框
+      if (window.updateSpeedSelect) {
+        window.updateSpeedSelect();
+      }
+    });
+  });
+}
+
 // ==================== 全局变量 ====================
 let map = null;
 let regionsData = null;
@@ -58,22 +162,22 @@ let animationConfig = {
 // 镜头速度档位配置
 const CAMERA_SPEED_LEVELS = [
   {
-    name: "极快",
+    name: "ui.animation.speedLevels.fastest",
     cameraFollowDuration: 600,
     cameraPanDuration: 400,
   },
   {
-    name: "正常",
+    name: "ui.animation.speedLevels.fast",
     cameraFollowDuration: 2000,
     cameraPanDuration: 1500,
   },
   {
-    name: "慢速",
+    name: "ui.animation.speedLevels.slow",
     cameraFollowDuration: 3500,
     cameraPanDuration: 2800,
   },
   {
-    name: "极慢",
+    name: "ui.animation.speedLevels.slowest",
     cameraFollowDuration: 5000,
     cameraPanDuration: 4000,
   },
@@ -530,28 +634,37 @@ function showDetailPanel(locationGroup) {
 
   const { location, events } = locationGroup;
   const visitCount = events.length;
-  const transitCount = events.filter((e) => e.visitType === "途径").length;
-  const destCount = events.filter((e) => e.visitType === "目的地").length;
-  const startCount = events.filter((e) => e.visitType === "起点").length;
-  const activityCount = events.filter((e) => e.visitType === "活动").length;
-  const birthCount = events.filter((e) => e.visitType === "出生").length;
+
+  // 使用当前语言的访问类型标签进行过滤
+  const transitLabel = i18n.t('ui.visitType.transit');
+  const destinationLabel = i18n.t('ui.visitType.destination');
+  const startLabel = i18n.t('ui.visitType.start');
+  const activityLabel = i18n.t('ui.visitType.activity');
+  const birthLabel = i18n.t('ui.visitType.birth');
+
+  const transitCount = events.filter((e) => e.visitType === transitLabel).length;
+  const destCount = events.filter((e) => e.visitType === destinationLabel).length;
+  const startCount = events.filter((e) => e.visitType === startLabel).length;
+  const activityCount = events.filter((e) => e.visitType === activityLabel).length;
+  const birthCount = events.filter((e) => e.visitType === birthLabel).length;
 
   titleEl.textContent = `📍 ${location}`;
 
-  let summaryText = `截止当前时间点共 <span class="visit-count-highlight">${visitCount}</span> 次相关记录`;
+  // 使用国际化的摘要文本
+  const summaryText = i18n.t('ui.panel.visitSummary', { count: visitCount });
 
   let descParts = [];
-  if (birthCount > 0) descParts.push(`${birthCount}次出生`);
-  if (destCount > 0) descParts.push(`${destCount}次到达`);
-  if (startCount > 0) descParts.push(`${startCount}次出发`);
-  if (transitCount > 0) descParts.push(`${transitCount}次途径`);
-  if (activityCount > 0) descParts.push(`${activityCount}次活动`);
+  if (birthCount > 0) descParts.push(`${birthCount}${i18n.t('ui.panel.visitTypes.birth')}`);
+  if (destCount > 0) descParts.push(`${destCount}${i18n.t('ui.panel.visitTypes.arrive')}`);
+  if (startCount > 0) descParts.push(`${startCount}${i18n.t('ui.panel.visitTypes.depart')}`);
+  if (transitCount > 0) descParts.push(`${transitCount}${i18n.t('ui.panel.visitTypes.transit')}`);
+  if (activityCount > 0) descParts.push(`${activityCount}${i18n.t('ui.panel.visitTypes.activity')}`);
 
   if (descParts.length > 0) {
-    summaryText += ` (${descParts.join("，")})`;
+    summaryEl.innerHTML = summaryText + ` (${descParts.join('，')})`;
+  } else {
+    summaryEl.innerHTML = summaryText;
   }
-
-  summaryEl.innerHTML = summaryText;
 
   const sortedEvents = [...events].sort((a, b) => a.index - b.index);
 
@@ -566,34 +679,48 @@ function showDetailPanel(locationGroup) {
       let visitTypeLabel = "";
       let visitOrderClass = "";
 
-      const orderNumber = `第${index + 1}次`;
+      // 使用国际化的顺序编号
+      const orderNumber = i18n.t('ui.panel.orderNumber', { n: index + 1 });
 
-      switch (event.visitType) {
-        case "出生":
-          visitTypeClass = "birth-event";
-          visitTypeLabel = "出生";
-          visitOrderClass = "birth-order";
-          break;
-        case "起点":
-          visitTypeClass = "start-event";
-          visitTypeLabel = "出发";
-          visitOrderClass = "start-order";
-          break;
-        case "目的地":
-          visitTypeLabel = "到达";
-          visitOrderClass = "";
-          break;
-        case "途径":
-          visitTypeClass = "transit-event";
-          visitTypeLabel = "途径";
-          visitOrderClass = "transit-order";
-          break;
-        case "活动":
-          visitTypeClass = "activity-event";
-          visitTypeLabel = "活动";
-          visitOrderClass = "activity-order";
-          break;
+      // 根据访问类型获取对应的国际化标签
+      const birthLabel = i18n.t('ui.visitType.birth');
+      const startLabel = i18n.t('ui.visitType.start');
+      const destinationLabel = i18n.t('ui.visitType.destination');
+      const transitLabel = i18n.t('ui.visitType.transit');
+      const activityLabel = i18n.t('ui.visitType.activity');
+
+      if (event.visitType === birthLabel) {
+        visitTypeClass = "birth-event";
+        visitTypeLabel = birthLabel;
+        visitOrderClass = "birth-order";
+      } else if (event.visitType === startLabel) {
+        visitTypeClass = "start-event";
+        visitTypeLabel = startLabel;
+        visitOrderClass = "start-order";
+      } else if (event.visitType === destinationLabel) {
+        visitTypeLabel = destinationLabel;
+        visitOrderClass = "";
+      } else if (event.visitType === transitLabel) {
+        visitTypeClass = "transit-event";
+        visitTypeLabel = transitLabel;
+        visitOrderClass = "transit-order";
+      } else if (event.visitType === activityLabel) {
+        visitTypeClass = "activity-event";
+        visitTypeLabel = activityLabel;
+        visitOrderClass = "activity-order";
       }
+
+      // 处理事件描述，如果是途径类型，添加国际化的前缀
+      let eventDescription = event.originalEvent || event.event;
+      if (event.visitType === transitLabel && event.originalEvent) {
+        const transitPrefix = i18n.t('ui.panel.transitPrefix');
+        eventDescription = transitPrefix + event.originalEvent;
+      }
+
+      // 使用国际化的年龄显示
+      const ageDisplay = event.age
+        ? `<div class="event-age">${i18n.t('ui.panel.eventAge', { age: event.age })}</div>`
+        : "";
 
       return `
       <div class="${itemClass} ${visitTypeClass}" data-event-index="${
@@ -604,10 +731,8 @@ function showDetailPanel(locationGroup) {
           <span class="event-date-item">${event.date}</span>
           <span class="visit-order ${visitOrderClass}">${visitTypeLabel}</span>
         </div>
-        <div class="event-description">${
-          event.originalEvent || event.event
-        }</div>
-        ${event.age ? `<div class="event-age">年龄: ${event.age}岁</div>` : ""}
+        <div class="event-description">${eventDescription}</div>
+        ${ageDisplay}
       </div>
     `;
     })
@@ -749,6 +874,8 @@ function initFeedbackModal() {
       hideFeedbackModal();
     }
   });
+
+  initWeChatQRModal();
 }
 
 /**
@@ -800,22 +927,47 @@ function openGitHubProject() {
 }
 
 /**
- * 处理微信公众号操作
+ * 检测是否为移动设备
+ */
+function isMobileDevice() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const mobileRegex = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|tablet/i;
+  const hasTouchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  const isSmallScreen = window.innerWidth <= 768;
+
+  return mobileRegex.test(userAgent) || (hasTouchScreen && isSmallScreen);
+}
+
+/**
+ * 处理微信公众号操作（移动端复制，PC端显示二维码）
  */
 function handleWeChatAction() {
-  const wechatName = "硅基茶水间";
+  hideFeedbackModal();
+
+  if (isMobileDevice()) {
+    copyWeChatName();
+  } else {
+    showWeChatQRModal();
+  }
+}
+
+/**
+ * 复制微信公众号名称
+ */
+function copyWeChatName() {
+  const wechatName = i18n.t('messages.wechatName');
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard
       .writeText(wechatName)
       .then(() => {
         showTemporaryMessage(
-          "公众号名称已复制到剪贴板：" + wechatName,
+          i18n.t('messages.wechatCopied', { name: wechatName }),
           "success"
         );
       })
       .catch(() => {
-        showTemporaryMessage("请搜索微信公众号：" + wechatName, "info");
+        showTemporaryMessage(i18n.t('messages.wechatSearch', { name: wechatName }), "info");
       });
   } else {
     try {
@@ -829,15 +981,71 @@ function handleWeChatAction() {
       document.execCommand("copy");
       document.body.removeChild(textArea);
       showTemporaryMessage(
-        "公众号名称已复制到剪贴板：" + wechatName,
+        i18n.t('messages.wechatCopied', { name: wechatName }),
         "success"
       );
     } catch (err) {
-      showTemporaryMessage("请搜索微信公众号：" + wechatName, "info");
+      showTemporaryMessage(i18n.t('messages.wechatSearch', { name: wechatName }), "info");
     }
   }
+}
 
-  hideFeedbackModal();
+/**
+ * 显示微信二维码弹窗
+ */
+function showWeChatQRModal() {
+  const modal = document.getElementById("wechat-qr-modal");
+  const backdrop = document.getElementById("wechat-qr-backdrop");
+
+  if (modal && backdrop) {
+    backdrop.classList.add("visible");
+    modal.classList.add("visible");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+/**
+ * 隐藏微信二维码弹窗
+ */
+function hideWeChatQRModal() {
+  const modal = document.getElementById("wechat-qr-modal");
+  const backdrop = document.getElementById("wechat-qr-backdrop");
+
+  if (modal && backdrop) {
+    backdrop.classList.remove("visible");
+    modal.classList.remove("visible");
+    document.body.style.overflow = "";
+  }
+}
+
+/**
+ * 初始化微信二维码弹窗
+ */
+function initWeChatQRModal() {
+  const backdrop = document.getElementById("wechat-qr-backdrop");
+  const closeBtn = document.getElementById("wechat-qr-close");
+  const modal = document.getElementById("wechat-qr-modal");
+
+  if (backdrop) {
+    backdrop.addEventListener("click", hideWeChatQRModal);
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", hideWeChatQRModal);
+  }
+
+  if (modal) {
+    modal.addEventListener("click", (e) => e.stopPropagation());
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const modal = document.getElementById("wechat-qr-modal");
+      if (modal && modal.classList.contains("visible")) {
+        hideWeChatQRModal();
+      }
+    }
+  });
 }
 
 /**
@@ -903,12 +1111,10 @@ function showTemporaryMessage(message, type = "info") {
  */
 function showPoetryMessage() {
   if (isPoetryAnimationPlaying) {
-    console.log("诗句动画正在播放中，忽略新的触发");
     return;
   }
 
   isPoetryAnimationPlaying = true;
-  console.log("开始播放诗句动画");
 
   if (poetryAnimationTimeout) {
     clearTimeout(poetryAnimationTimeout);
@@ -923,116 +1129,25 @@ function showPoetryMessage() {
   const poetryDiv = document.createElement("div");
   poetryDiv.className = "poetry-message";
 
-  const poetryTexts = [
-    "俱往矣，数风流人物，还看今朝",
-    "一万年太久，只争朝夕",
-    "雄关漫道真如铁，而今迈步从头越",
-    "江山如此多娇，引无数英雄竞折腰",
-  ];
-
-  const randomPoetry =
-    poetryTexts[Math.floor(Math.random() * poetryTexts.length)];
+  const poetryTexts = i18n.t('poems');
+  const randomPoetry = poetryTexts[Math.floor(Math.random() * poetryTexts.length)];
   poetryDiv.textContent = randomPoetry;
-
-  Object.assign(poetryDiv.style, {
-    position: "fixed",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%) scale(0.3)",
-    background:
-      "linear-gradient(135deg, rgba(200, 16, 46, 0.95), rgba(139, 69, 19, 0.95))",
-    color: "#f4f1de",
-    padding: "24px 32px",
-    borderRadius: "16px",
-    border: "2px solid rgba(255, 215, 0, 0.6)",
-    zIndex: "9999",
-    fontSize: "18px",
-    fontWeight: "700",
-    fontFamily: "'KaiTi', '楷体', serif",
-    boxShadow:
-      "0 8px 32px rgba(200, 16, 46, 0.4), inset 0 2px 8px rgba(255, 255, 255, 0.2)",
-    backdropFilter: "blur(12px)",
-    maxWidth: "80vw",
-    textAlign: "center",
-    lineHeight: "1.6",
-    letterSpacing: "2px",
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
-    opacity: "0",
-    pointerEvents: "none",
-    transition: "all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-  });
 
   document.body.appendChild(poetryDiv);
 
   requestAnimationFrame(() => {
-    poetryDiv.style.opacity = "1";
-    poetryDiv.style.transform = "translate(-50%, -50%) scale(1)";
+    requestAnimationFrame(() => {
+      poetryDiv.classList.add("poetry-animate");
+    });
   });
 
-  setTimeout(() => {
-    if (poetryDiv.parentNode && isPoetryAnimationPlaying) {
-      poetryDiv.style.transform = "translate(-50%, -50%) scale(1.1)";
-      poetryDiv.style.fontSize = "20px";
-    }
-  }, 800);
-
-  // 第三阶段：放大到最大并开始淡出
-  setTimeout(() => {
-    if (poetryDiv.parentNode && isPoetryAnimationPlaying) {
-      poetryDiv.style.transform = "translate(-50%, -50%) scale(1.3)";
-      poetryDiv.style.opacity = "0.3";
-      poetryDiv.style.fontSize = "24px";
-      poetryDiv.style.filter = "blur(1px)";
-    }
-  }, 2200);
-
-  // 第四阶段：完全消失
-  setTimeout(() => {
-    if (poetryDiv.parentNode && isPoetryAnimationPlaying) {
-      poetryDiv.style.transform = "translate(-50%, -50%) scale(1.8)";
-      poetryDiv.style.opacity = "0";
-      poetryDiv.style.filter = "blur(3px)";
-
-      setTimeout(() => {
-        if (poetryDiv.parentNode) {
-          poetryDiv.remove();
-        }
-        isPoetryAnimationPlaying = false;
-        console.log("诗句动画播放完成，状态已重置");
-      }, 800);
-    } else if (!isPoetryAnimationPlaying) {
-      if (poetryDiv.parentNode) {
-        poetryDiv.remove();
-      }
-    }
-  }, 3500);
-
-  setTimeout(() => {
-    if (poetryDiv.parentNode && isPoetryAnimationPlaying) {
-      poetryDiv.style.boxShadow =
-        "0 8px 32px rgba(255, 215, 0, 0.8), inset 0 2px 8px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 215, 0, 0.6)";
-    }
-  }, 1000);
-
-  setTimeout(() => {
-    if (poetryDiv.parentNode && isPoetryAnimationPlaying) {
-      poetryDiv.style.boxShadow =
-        "0 8px 32px rgba(200, 16, 46, 0.4), inset 0 2px 8px rgba(255, 255, 255, 0.2)";
-    }
-  }, 1800);
-
   poetryAnimationTimeout = setTimeout(() => {
-    if (isPoetryAnimationPlaying) {
-      console.warn("诗句动画超时保护触发，强制重置状态");
-      isPoetryAnimationPlaying = false;
-
-      const remainingPoetry = document.querySelector(".poetry-message");
-      if (remainingPoetry) {
-        remainingPoetry.remove();
-      }
+    if (poetryDiv.parentNode) {
+      poetryDiv.remove();
     }
+    isPoetryAnimationPlaying = false;
     poetryAnimationTimeout = null;
-  }, 5000);
+  }, 4500);
 }
 
 /**
@@ -1116,27 +1231,66 @@ async function loadGeographicData() {
 
 /**
  * 加载轨迹事件数据
+ * 英文版本使用英文事件描述，但坐标信息从中文数据获取（因为坐标映射基于中文地名）
  */
 async function loadTrajectoryData() {
   try {
-    const response = await fetch("data/mao_trajectory_events.json");
-    if (!response.ok) {
+    const locale = i18n.getCurrentLocale();
+    const isEnglish = locale === 'en';
+
+    // 始终加载中文数据（用于坐标匹配）
+    const zhResponse = await fetch('data/mao_trajectory_events.json');
+    if (!zhResponse.ok) {
       throw new Error(
-        `加载事件数据失败: ${response.status} - ${response.statusText}`
+        `加载中文事件数据失败: ${zhResponse.status} - ${zhResponse.statusText}`
       );
     }
-
-    const rawData = await response.json();
+    const zhData = await zhResponse.json();
 
     if (
-      !rawData.events ||
-      !Array.isArray(rawData.events) ||
-      rawData.events.length === 0
+      !zhData.events ||
+      !Array.isArray(zhData.events) ||
+      zhData.events.length === 0
     ) {
-      throw new Error("mao_trajectory_events.json 格式错误或事件数据为空");
+      throw new Error("中文事件数据格式错误或为空");
     }
 
-    return processTrajectoryData(rawData);
+    // 如果是英文，加载英文数据并合并坐标信息
+    if (isEnglish) {
+      const enResponse = await fetch('data/mao_trajectory_events_en.json');
+      if (!enResponse.ok) {
+        throw new Error(
+          `加载英文事件数据失败: ${enResponse.status} - ${enResponse.statusText}`
+        );
+      }
+      const enData = await enResponse.json();
+
+      if (
+        !enData.events ||
+        !Array.isArray(enData.events) ||
+        enData.events.length === 0
+      ) {
+        throw new Error("英文事件数据格式错误或为空");
+      }
+
+      // 使用英文的事件描述，但用中文的坐标信息
+      const mergedData = {
+        title: enData.title,
+        events: enData.events.map((enEvent, index) => {
+          const zhEvent = zhData.events[index];
+          return {
+            ...enEvent,
+            // 使用中文数据的坐标信息（因为坐标映射基于中文地名）
+            coordinates: zhEvent ? zhEvent.coordinates : enEvent.coordinates
+          };
+        })
+      };
+
+      console.log('英文数据已与中文坐标信息合并');
+      return processTrajectoryData(mergedData);
+    }
+
+    return processTrajectoryData(zhData);
   } catch (error) {
     console.error("加载轨迹数据失败:", error);
     throw error;
@@ -1297,10 +1451,22 @@ function processTrajectoryData(data) {
 function groupEventsByLocation(events, maxIndex) {
   const groups = new Map();
 
+  // 获取国际化的访问类型标签
+  const birthLabel = i18n.t('ui.visitType.birth');
+  const startLabel = i18n.t('ui.visitType.start');
+  const destinationLabel = i18n.t('ui.visitType.destination');
+  const transitLabel = i18n.t('ui.visitType.transit');
+  const activityLabel = i18n.t('ui.visitType.activity');
+
+  // 根据当前语言获取 movementType 标识
+  const locale = i18n.getCurrentLocale();
+  const birthType = locale === 'en' ? 'Birth' : '出生';
+  const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
+
   for (let i = 0; i <= maxIndex; i++) {
     const event = events[i];
 
-    if (event.movementType === "出生") {
+    if (event.movementType === birthType) {
       if (event.endCoords && event.endLocation) {
         const coordKey = `${event.endCoords[0]},${event.endCoords[1]}`;
 
@@ -1320,12 +1486,12 @@ function groupEventsByLocation(events, maxIndex) {
           date: event.date,
           event: event.event,
           age: event.age,
-          visitType: "出生",
+          visitType: birthLabel,
         });
 
         group.types.add(event.movementType);
       }
-    } else if (event.movementType === "原地活动") {
+    } else if (event.movementType === localActivityType) {
       if (event.endCoords && event.endLocation) {
         const coordKey = `${event.endCoords[0]},${event.endCoords[1]}`;
 
@@ -1345,7 +1511,7 @@ function groupEventsByLocation(events, maxIndex) {
           date: event.date,
           event: event.event,
           age: event.age,
-          visitType: "活动",
+          visitType: activityLabel,
         });
 
         group.types.add(event.movementType);
@@ -1370,7 +1536,7 @@ function groupEventsByLocation(events, maxIndex) {
           date: event.date,
           event: event.event,
           age: event.age,
-          visitType: "起点",
+          visitType: startLabel,
         });
 
         group.types.add(event.movementType);
@@ -1395,7 +1561,7 @@ function groupEventsByLocation(events, maxIndex) {
           date: event.date,
           event: event.event,
           age: event.age,
-          visitType: "目的地",
+          visitType: destinationLabel,
         });
 
         group.types.add(event.movementType);
@@ -1425,13 +1591,14 @@ function groupEventsByLocation(events, maxIndex) {
               }
 
               const group = groups.get(coordKey);
+              const transitPrefix = i18n.t('ui.panel.transitPrefix');
               group.events.push({
                 ...event,
                 index: i,
                 date: event.date,
-                event: `途经：${event.event}`,
+                event: transitPrefix + event.event,
                 age: event.age,
-                visitType: "途径",
+                visitType: transitLabel,
                 originalEvent: event.event,
               });
 
@@ -1460,20 +1627,28 @@ function getVisitCountClass(visitCount) {
  * 根据事件类型获取主要标记类型
  */
 function getPrimaryMarkerType(types) {
-  if (types.has("出生")) return "marker-birth";
+  // 获取当前语言环境
+  const locale = i18n.getCurrentLocale();
+  const birthType = locale === 'en' ? 'Birth' : '出生';
+  const internationalType = locale === 'en' ? 'International Movement' : '国际移动';
+  const longDistanceType = locale === 'en' ? 'Long-distance Movement' : '长途移动';
+  const shortDistanceType = locale === 'en' ? 'Short-distance Movement' : '短途移动';
+  const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
 
-  if (types.has("国际移动")) return "marker-international";
+  if (types.has(birthType)) return "marker-birth";
 
-  if (types.has("长途移动")) return "marker-long-distance";
+  if (types.has(internationalType)) return "marker-international";
 
-  if (types.has("短途移动")) return "marker-short-distance";
+  if (types.has(longDistanceType)) return "marker-long-distance";
 
-  const movementTypes = ["国际移动", "长途移动", "短途移动"].filter((type) =>
+  if (types.has(shortDistanceType)) return "marker-short-distance";
+
+  const movementTypes = [internationalType, longDistanceType, shortDistanceType].filter((type) =>
     types.has(type)
   );
   if (movementTypes.length > 1) return "marker-mixed";
 
-  if (types.has("原地活动")) return "marker-activity";
+  if (types.has(localActivityType)) return "marker-activity";
 
   return "marker-movement";
 }
@@ -1549,22 +1724,33 @@ function createLocationMarker(
   let tooltipText;
   if (visitCount === 1) {
     const event = events[0];
-    tooltipText = `${event.date} - ${event.visitType === "途径" ? "途经" : ""}${
+    const transitLabel = i18n.t('ui.visitType.transit');
+    const transitPrefix = i18n.t('ui.panel.transitPrefix');
+    const isTransit = event.visitType === transitLabel;
+    tooltipText = `${event.date} - ${isTransit ? transitPrefix : ""}${
       event.originalEvent || event.event
     }`;
   } else {
-    const transitCount = events.filter((e) => e.visitType === "途径").length;
-    const destCount = events.filter((e) => e.visitType === "目的地").length;
-    const startCount = events.filter((e) => e.visitType === "起点").length;
-    const activityCount = events.filter((e) => e.visitType === "活动").length;
-    const birthCount = events.filter((e) => e.visitType === "出生").length;
+    // 使用国际化标签进行过滤
+    const transitLabel = i18n.t('ui.visitType.transit');
+    const destinationLabel = i18n.t('ui.visitType.destination');
+    const startLabel = i18n.t('ui.visitType.start');
+    const activityLabel = i18n.t('ui.visitType.activity');
+    const birthLabel = i18n.t('ui.visitType.birth');
+
+    const transitCount = events.filter((e) => e.visitType === transitLabel).length;
+    const destCount = events.filter((e) => e.visitType === destinationLabel).length;
+    const startCount = events.filter((e) => e.visitType === startLabel).length;
+    const activityCount = events.filter((e) => e.visitType === activityLabel).length;
+    const birthCount = events.filter((e) => e.visitType === birthLabel).length;
 
     let descParts = [];
-    if (birthCount > 0) descParts.push(`${birthCount}次出生`);
-    if (destCount > 0) descParts.push(`${destCount}次到达`);
-    if (startCount > 0) descParts.push(`${startCount}次出发`);
-    if (transitCount > 0) descParts.push(`${transitCount}次途径`);
-    if (activityCount > 0) descParts.push(`${activityCount}次活动`);
+    // 使用国际化的计数描述
+    if (birthCount > 0) descParts.push(`${birthCount}${i18n.t('ui.panel.visitTypes.birth')}`);
+    if (destCount > 0) descParts.push(`${destCount}${i18n.t('ui.panel.visitTypes.arrive')}`);
+    if (startCount > 0) descParts.push(`${startCount}${i18n.t('ui.panel.visitTypes.depart')}`);
+    if (transitCount > 0) descParts.push(`${transitCount}${i18n.t('ui.panel.visitTypes.transit')}`);
+    if (activityCount > 0) descParts.push(`${activityCount}${i18n.t('ui.panel.visitTypes.activity')}`);
 
     tooltipText = `${location} (${descParts.join(
       "，"
@@ -1695,13 +1881,17 @@ function updatePathsStatic(targetIndex) {
   pathLayers = [];
   motionPaths.clear();
 
+  // 获取当前语言环境的本地活动类型标识
+  const locale = i18n.getCurrentLocale();
+  const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
+
   for (let i = 0; i <= targetIndex; i++) {
     const currentEvent = trajectoryData.events[i];
 
     if (
       currentEvent.startCoords &&
       currentEvent.endCoords &&
-      currentEvent.movementType !== "原地活动"
+      currentEvent.movementType !== localActivityType
     ) {
       console.log(
         `${isDragging ? "拖动" : "静态"}添加路径: 事件 ${i}: ${
@@ -1839,10 +2029,14 @@ function updatePathsAnimated(targetIndex, isReverse = false) {
       }
     });
 
+    // 获取当前语言环境的本地活动类型标识
+    const locale = i18n.getCurrentLocale();
+    const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
+
     if (
       currentEvent.startCoords &&
       currentEvent.endCoords &&
-      currentEvent.movementType !== "原地活动"
+      currentEvent.movementType !== localActivityType
     ) {
       console.log(
         `Motion 添加路径: 事件 ${targetIndex} - ${currentEvent.event}`
@@ -2322,22 +2516,32 @@ function updateProgress() {
 function updateStatistics() {
   if (!trajectoryData || !trajectoryData.events) return;
 
+  const locale = i18n.getCurrentLocale();
   const events = trajectoryData.events;
+
+  // 根据语言选择对应的movementType值
+  const birthType = locale === 'en' ? 'Birth' : '出生';
+  const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
+  const internationalType = locale === 'en' ? 'International Movement' : '国际移动';
+
   const movementEvents = events.filter(
-    (e) => e.movementType !== "出生" && e.movementType !== "原地活动"
+    (e) => e.movementType !== birthType && e.movementType !== localActivityType
   );
   const internationalEvents = events.filter(
-    (e) => e.movementType === "国际移动"
+    (e) => e.movementType === internationalType
   );
 
   const visitedPlaces = new Set();
   events.forEach((event) => {
     if (event.endLocation) {
       let location = event.endLocation;
-      if (location.includes("省")) {
-        location = location.split("省")[0] + "省";
-      } else if (location.includes("市")) {
-        location = location.split("市")[0] + "市";
+      const provinceKeyword = locale === 'en' ? 'Province' : '省';
+      const cityKeyword = locale === 'en' ? 'City' : '市';
+
+      if (location.includes(provinceKeyword)) {
+        location = location.split(provinceKeyword)[0] + provinceKeyword;
+      } else if (location.includes(cityKeyword)) {
+        location = location.split(cityKeyword)[0] + cityKeyword;
       }
       visitedPlaces.add(location);
     }
@@ -2346,13 +2550,14 @@ function updateStatistics() {
   const startYear = parseInt(events[0].date.split("-")[0]);
   const endYear = parseInt(events[events.length - 1].date.split("-")[0]);
   const timeSpan = endYear - startYear;
+  const yearSuffix = locale === 'en' ? ' years' : '年';
 
   const pcStats = {
     "total-events": events.length,
     "movement-count": movementEvents.length,
     "visited-places": visitedPlaces.size,
     "international-count": internationalEvents.length,
-    "time-span": timeSpan + "年",
+    "time-span": timeSpan + yearSuffix,
   };
 
   Object.entries(pcStats).forEach(([id, value]) => {
@@ -2388,21 +2593,35 @@ function togglePlay() {
   }
 }
 
-// 递归播放下一个事件
+/**
+ * 递归播放下一个事件
+ */
 function playNextEvent() {
   if (!isPlaying || currentEventIndex >= trajectoryData.events.length - 1) {
-    if (currentEventIndex >= trajectoryData.events.length - 1) {
-      isPlaying = false;
-      const btn = document.getElementById("play-btn");
-      if (btn) {
-        btn.textContent = "▶";
-        btn.title = "播放";
-      }
+    isPlaying = false;
+    const btn = document.getElementById("play-btn");
+    if (btn) {
+      btn.textContent = "▶";
+      btn.title = "播放";
     }
     return;
   }
 
-  showEventAtIndex(currentEventIndex + 1, true);
+  const nextIndex = currentEventIndex + 1;
+  const isLastEvent = nextIndex >= trajectoryData.events.length - 1;
+
+  showEventAtIndex(nextIndex, true);
+
+  if (isLastEvent) {
+    isPlaying = false;
+    const btn = document.getElementById("play-btn");
+    if (btn) {
+      btn.textContent = "▶";
+      btn.title = "播放";
+    }
+    showPoetryMessage();
+    return;
+  }
 
   const waitTime = Math.max(
     currentPlaySpeed,
@@ -2461,15 +2680,9 @@ function handleTimelineKeydown(e) {
       handled = true;
       break;
     case "End":
-      // 检查是否有动画正在播放
-      if (isPoetryAnimationPlaying) {
-        e.preventDefault();
-        return;
-      }
-      // 不跳转，只显示诗句动画
-      e.preventDefault();
-      showPoetryMessage();
-      return;
+      newIndex = trajectoryData.events.length - 1;
+      handled = true;
+      break;
     case " ":
       e.preventDefault();
       togglePlay();
@@ -2563,10 +2776,10 @@ function updateCameraSpeed(levelIndex) {
   animationConfig.cameraPanDuration = speedConfig.cameraPanDuration;
 
   if (cameraSpeedDisplay) {
-    cameraSpeedDisplay.textContent = speedConfig.name;
+    cameraSpeedDisplay.textContent = i18n.t(speedConfig.name);
   }
 
-  console.log(`镜头跟随速度已调整为: ${speedConfig.name}`, {
+  console.log(`镜头跟随速度已调整为: ${i18n.t(speedConfig.name)}`, {
     跟随时长: speedConfig.cameraFollowDuration + "ms",
     平移时长: speedConfig.cameraPanDuration + "ms",
   });
@@ -2613,7 +2826,7 @@ function getSpeedLabel(speed) {
  */
 function copyCurrentEventData() {
   if (!trajectoryData || !trajectoryData.events || currentEventIndex < 0) {
-    showTemporaryMessage("当前没有可复制的事件数据", "warning");
+    showTemporaryMessage(i18n.t('messages.noEventData'), "warning");
     return;
   }
 
@@ -2650,7 +2863,7 @@ function copyCurrentEventData() {
         .then(() => {
           const eventNumber = currentEventIndex + 1;
           showTemporaryMessage(
-            `事件 ${eventNumber} 数据已复制到剪贴板`,
+            i18n.t('messages.copySuccess', { number: eventNumber }),
             "success"
           );
         })
@@ -2662,7 +2875,7 @@ function copyCurrentEventData() {
     }
   } catch (error) {
     console.error("复制事件数据时出错:", error);
-    showTemporaryMessage("复制失败，请重试", "warning");
+    showTemporaryMessage(i18n.t('messages.copyFailed'), "warning");
   }
 }
 
@@ -2684,13 +2897,13 @@ function fallbackCopyToClipboard(text) {
 
     if (successful) {
       const eventNumber = currentEventIndex + 1;
-      showTemporaryMessage(`事件 ${eventNumber} 数据已复制到剪贴板`, "success");
+      showTemporaryMessage(i18n.t('messages.copySuccess', { number: eventNumber }), "success");
     } else {
-      showTemporaryMessage("复制失败，请手动选择并复制", "warning");
+      showTemporaryMessage(i18n.t('messages.copyManual'), "warning");
     }
   } catch (err) {
     console.error("传统复制方法也失败:", err);
-    showTemporaryMessage("复制失败，浏览器不支持自动复制", "warning");
+    showTemporaryMessage(i18n.t('messages.copyNotSupported'), "warning");
   }
 }
 
@@ -2755,7 +2968,8 @@ function initCustomSpeedSelect() {
 
   function selectOption(option) {
     const value = option.dataset.value;
-    const text = option.textContent;
+    const i18nKey = option.getAttribute('data-i18n');
+    const text = i18nKey ? i18n.t(i18nKey) : option.textContent;
 
     selectText.textContent = text;
 
@@ -2839,10 +3053,22 @@ function initCustomSpeedSelect() {
     `[data-value="${initialValue}"]`
   );
   if (initialOption) {
-    selectText.textContent = initialOption.textContent;
+    const i18nKey = initialOption.getAttribute('data-i18n');
+    selectText.textContent = i18nKey ? i18n.t(i18nKey) : initialOption.textContent;
     selectOptions.forEach((opt) => opt.classList.remove("selected"));
     initialOption.classList.add("selected");
   }
+
+  // 创建更新函数，供语言切换时调用
+  window.updateSpeedSelect = function() {
+    const currentOption = customSelect.querySelector(".select-option.selected");
+    if (currentOption) {
+      const i18nKey = currentOption.getAttribute('data-i18n');
+      if (i18nKey) {
+        selectText.textContent = i18n.t(i18nKey);
+      }
+    }
+  };
 }
 
 // ==================== 音乐播放功能 ====================
@@ -3000,7 +3226,7 @@ function loadMusicAudio(song, autoPlay = false) {
     return new Promise((resolve) => {
       if (urlIndex >= song.urls.length) {
         console.warn("无法加载音频文件:", song.title);
-        showTemporaryMessage("无法加载音频文件，请尝试上传本地文件", "warning");
+        showTemporaryMessage(i18n.t('messages.musicLoadError'), "warning");
         resolve(false);
         return;
       }
@@ -3154,7 +3380,7 @@ function toggleMusicPlay() {
         })
         .catch((error) => {
           console.error("音频播放失败:", error);
-          showTemporaryMessage("音频播放失败，请检查文件格式", "warning");
+          showTemporaryMessage(i18n.t('messages.musicPlayFailed'), "warning");
 
           isMusicPlaying = false;
           updatePlayButton();
@@ -3431,7 +3657,7 @@ function handleProgressClick(e) {
  */
 function handleMusicError(e) {
   console.error("音频播放错误:", e);
-  showTemporaryMessage("音频播放出错，请尝试其他歌曲", "warning");
+  showTemporaryMessage(i18n.t('messages.musicPlayError'), "warning");
 
   isMusicPlaying = false;
   clearInterval(musicProgressInterval);
@@ -3522,7 +3748,7 @@ function handleMusicFileUpload(e) {
   if (!file) return;
 
   if (!file.type.startsWith("audio/")) {
-    showTemporaryMessage("请选择有效的音频文件", "warning");
+    showTemporaryMessage(i18n.t('messages.musicUploadError'), "warning");
     return;
   }
 
@@ -3543,7 +3769,7 @@ function handleMusicFileUpload(e) {
 
   selectSong(MUSIC_PLAYLIST.length - 1, false); // 选择新上传的歌曲，但不自动播放
 
-  showTemporaryMessage("本地音乐文件添加成功", "success");
+  showTemporaryMessage(i18n.t('messages.musicUploadSuccess'), "success");
 
   e.target.value = "";
 }
@@ -3643,6 +3869,10 @@ function cleanupMotionResources() {
 function preloadKeyAnimations() {
   if (!trajectoryData || !trajectoryData.events) return;
 
+  // 获取当前语言环境的本地活动类型标识
+  const locale = i18n.getCurrentLocale();
+  const localActivityType = locale === 'en' ? 'Local Activity' : '原地活动';
+
   const keyEvents = trajectoryData.events.slice(
     0,
     Math.min(10, trajectoryData.events.length)
@@ -3652,7 +3882,7 @@ function preloadKeyAnimations() {
     if (
       event.startCoords &&
       event.endCoords &&
-      event.movementType !== "原地活动"
+      event.movementType !== localActivityType
     ) {
       const preloadPath = createMotionPath(
         event.startCoords,
@@ -3960,6 +4190,9 @@ function bindEvents() {
  */
 async function initApp() {
   try {
+    // 初始化多语言支持
+    await initI18n();
+
     initMap();
 
     const motionLoaded = checkMotionPlugin();

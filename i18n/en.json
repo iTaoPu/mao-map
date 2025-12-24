@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Mao Zedong's Life Journey Map",
+    "description": "Interactive map showing Chairman Mao's life trajectory"
+  },
+  "ui": {
+    "stats": {
+      "title": "Statistics",
+      "totalEvents": "Total Events",
+      "movementCount": "Movements",
+      "visitedPlaces": "Places Visited",
+      "internationalCount": "International Trips",
+      "timeSpan": "Time Span"
+    },
+    "timeline": {
+      "start": "Start",
+      "end": "End",
+      "loading": "Loading..."
+    },
+    "controls": {
+      "play": "Play",
+      "pause": "Pause",
+      "prev": "Previous Event",
+      "next": "Next Event",
+      "togglePanel": "Toggle Control Panel",
+      "speed": "Playback Speed",
+      "speedFast": "Fast",
+      "speedNormal": "Normal",
+      "speedSlow": "Slow",
+      "speedVeryFast": "Very Fast",
+      "speedVerySlow": "Very Slow",
+      "speedOptions": {
+        "veryFast": "Very Fast",
+        "fast": "Normal",
+        "normal": "Slower",
+        "slow": "Very Slow"
+      }
+    },
+    "animation": {
+      "settingsTitle": "Animation Settings",
+      "pathSpeed": "Path Drawing Speed",
+      "cameraSpeed": "Camera Follow Speed",
+      "cameraFollow": "Camera Follow",
+      "cameraControl": "Camera Control",
+      "cameraOn": "On",
+      "cameraOff": "Off",
+      "speedLevels": {
+        "fastest": "Fastest",
+        "fast": "Normal",
+        "slow": "Slow",
+        "slowest": "Slowest"
+      }
+    },
+    "music": {
+      "title": "Background Music",
+      "selectSong": "Select a Song",
+      "playlist": "Playlist",
+      "localMusic": "Local Music",
+      "uploadBtn": "Select Local Music File",
+      "uploadHint": "Supports MP3, WAV, OGG formats",
+      "close": "Close",
+      "playPrev": "Previous",
+      "playNext": "Next",
+      "volume": "Volume"
+    },
+    "feedback": {
+      "title": "Feedback",
+      "issues": {
+        "title": "Report Issue",
+        "desc": "Found a bug or suggestion"
+      },
+      "project": {
+        "title": "Project Homepage",
+        "desc": "View source code and documentation"
+      },
+      "wechat": {
+        "title": "Follow Us on WeChat",
+        "desc": "Silicon Tea Room - Discussion"
+      }
+    },
+    "panel": {
+      "locationTitle": "Location Details",
+      "visitSummary": "Total <span class=\"visit-count-highlight\">{count}</span> related records up to now",
+      "visitTypes": {
+        "birth": "birth(s)",
+        "arrive": "arrival(s)",
+        "depart": "departure(s)",
+        "transit": "transit(s)",
+        "activity": "activit(ies)"
+      },
+      "eventAge": "Age: {age} years",
+      "orderNumber": "{n} visit",
+      "transitPrefix": "Passing through: "
+    },
+    "progress": {
+      "event": "Event",
+      "age": "Age",
+      "ageUnit": "years",
+      "progress": "Progress"
+    },
+    "visitType": {
+      "birth": "Birth",
+      "start": "Departure",
+      "destination": "Arrival",
+      "transit": "Transit",
+      "activity": "Activity"
+    }
+  },
+  "messages": {
+    "loading": "Loading trajectory data...",
+    "loadSuccess": "Data loaded successfully",
+    "loadError": "Loading failed",
+    "wechatName": "Silicon Tea Room",
+    "wechatCopied": "WeChat account name copied to clipboard: {name}",
+    "wechatSearch": "Please search for WeChat account: {name}",
+    "musicUploadSuccess": "Local music file added successfully",
+    "musicUploadError": "Please select a valid audio file",
+    "musicLoadError": "Unable to load audio file, please try uploading a local file",
+    "musicPlayError": "Audio playback error, please try another song",
+    "musicPlayFailed": "Audio playback failed, please check the file format",
+    "copySuccess": "Event {number} data copied to clipboard",
+    "copyFailed": "Copy failed, please try again",
+    "copyManual": "Copy failed, please select and copy manually",
+    "copyNotSupported": "Copy failed, browser does not support automatic copying",
+    "noEventData": "No event data available to copy"
+  },
+  "poems": [
+    "All are gone, the truly great / We look to this age for men of vision",
+    "Ten thousand years are too long / Seize the day, seize the hour",
+    "The long march is like iron / Yet we stride from the beginning",
+    "So beautiful is our land / It makes countless heroes bow in homage"
+  ],
+  "console": {
+    "mapInitComplete": "Map initialization complete",
+    "coordinateMappingComplete": "Coordinate mapping complete, total",
+    "places": "places",
+    "internationalCoords": "International coordinates",
+    "dataLoadSuccess": "china_regions_coordinates.json loaded successfully",
+    "dataLoadFailed": "External geographic data loading failed",
+    "backupDataLoaded": "Backup international coordinate data loaded",
+    "motionPluginLoaded": "leaflet.motion plugin loaded successfully",
+    "motionPluginFailed": "leaflet.motion plugin not loaded correctly",
+    "motionResourcesCleanup": "Motion resources cleanup complete",
+    "motionOptimized": "Motion performance optimization enabled",
+    "keyAnimationsPreloaded": "Key path animations preloaded"
+  },
+  "errors": {
+    "panelCloseError": "Error closing panel",
+    "dragListenerCleanup": "Error cleaning up drag listeners",
+    "coordMappingFailed": "Unable to match coordinates",
+    "eventDataLoadFailed": "Failed to load event data",
+    "eventDataEmpty": "mao_trajectory_events.json format error or event data is empty",
+    "trajectoryDataEmpty": "Trajectory data is empty",
+    "geoDataLoadFailed": "Geographic data loading failed",
+    "appInitFailed": "Application initialization failed",
+    "motionPluginError": "leaflet.motion plugin not loaded correctly, please ensure plugin file is properly included"
+  }
+}

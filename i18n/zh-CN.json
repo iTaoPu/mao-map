@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "毛泽东生平地理轨迹",
+    "description": "通过交互式地图展示毛泽东主席的人生轨迹"
+  },
+  "ui": {
+    "stats": {
+      "title": "轨迹统计",
+      "totalEvents": "总事件数",
+      "movementCount": "移动次数",
+      "visitedPlaces": "访问省市",
+      "internationalCount": "国际移动",
+      "timeSpan": "时间跨度"
+    },
+    "timeline": {
+      "start": "开始",
+      "end": "结束",
+      "loading": "加载中..."
+    },
+    "controls": {
+      "play": "播放",
+      "pause": "暂停",
+      "prev": "上一个事件",
+      "next": "下一个事件",
+      "togglePanel": "切换控制面板",
+      "speed": "播放速度",
+      "speedFast": "快",
+      "speedNormal": "中",
+      "speedSlow": "慢",
+      "speedVeryFast": "很快",
+      "speedVerySlow": "很慢",
+      "speedOptions": {
+        "veryFast": "很快",
+        "fast": "正常",
+        "normal": "较慢",
+        "slow": "很慢"
+      }
+    },
+    "animation": {
+      "settingsTitle": "动画设置",
+      "pathSpeed": "路径绘制速度",
+      "cameraSpeed": "镜头跟随速度",
+      "cameraFollow": "镜头跟随",
+      "cameraControl": "镜头控制",
+      "cameraOn": "开启",
+      "cameraOff": "关闭",
+      "speedLevels": {
+        "fastest": "极快",
+        "fast": "正常",
+        "slow": "慢速",
+        "slowest": "极慢"
+      }
+    },
+    "music": {
+      "title": "背景音乐",
+      "selectSong": "请选择歌曲",
+      "playlist": "播放列表",
+      "localMusic": "本地音乐",
+      "uploadBtn": "选择本地音乐文件",
+      "uploadHint": "支持 MP3, WAV, OGG 格式",
+      "close": "关闭",
+      "playPrev": "上一首",
+      "playNext": "下一首",
+      "volume": "音量"
+    },
+    "feedback": {
+      "title": "意见反馈",
+      "issues": {
+        "title": "问题反馈",
+        "desc": "发现bug或建议改进"
+      },
+      "project": {
+        "title": "项目主页",
+        "desc": "查看源码和文档"
+      },
+      "wechat": {
+        "title": "关注公众号",
+        "desc": "硅基茶水间 - 交流讨论"
+      }
+    },
+    "panel": {
+      "locationTitle": "地点详情",
+      "visitSummary": "截止当前时间点共 <span class=\"visit-count-highlight\">{count}</span> 次相关记录",
+      "visitTypes": {
+        "birth": "次出生",
+        "arrive": "次到达",
+        "depart": "次出发",
+        "transit": "次途径",
+        "activity": "次活动"
+      },
+      "eventAge": "年龄: {age}岁",
+      "orderNumber": "第{n}次",
+      "transitPrefix": "途经："
+    },
+    "progress": {
+      "event": "事件",
+      "age": "年龄",
+      "ageUnit": "岁",
+      "progress": "进度"
+    },
+    "visitType": {
+      "birth": "出生",
+      "start": "出发",
+      "destination": "到达",
+      "transit": "途径",
+      "activity": "活动"
+    }
+  },
+  "messages": {
+    "loading": "正在加载轨迹数据...",
+    "loadSuccess": "数据加载完成",
+    "loadError": "加载失败",
+    "wechatName": "硅基茶水间",
+    "wechatCopied": "公众号名称已复制到剪贴板：{name}",
+    "wechatSearch": "请搜索微信公众号：{name}",
+    "musicUploadSuccess": "本地音乐文件添加成功",
+    "musicUploadError": "请选择有效的音频文件",
+    "musicLoadError": "无法加载音频文件，请尝试上传本地文件",
+    "musicPlayError": "音频播放出错，请尝试其他歌曲",
+    "musicPlayFailed": "音频播放失败，请检查文件格式",
+    "copySuccess": "事件 {number} 数据已复制到剪贴板",
+    "copyFailed": "复制失败，请重试",
+    "copyManual": "复制失败，请手动选择并复制",
+    "copyNotSupported": "复制失败，浏览器不支持自动复制",
+    "noEventData": "当前没有可复制的事件数据"
+  },
+  "poems": [
+    "俱往矣，数风流人物，还看今朝",
+    "一万年太久，只争朝夕",
+    "雄关漫道真如铁，而今迈步从头越",
+    "江山如此多娇，引无数英雄竞折腰"
+  ],
+  "console": {
+    "mapInitComplete": "地图初始化完成",
+    "coordinateMappingComplete": "坐标映射建立完成，共",
+    "places": "个地点",
+    "internationalCoords": "国际坐标",
+    "dataLoadSuccess": "china_regions_coordinates.json 加载成功",
+    "dataLoadFailed": "外部地理数据加载失败",
+    "backupDataLoaded": "已加载备用国际坐标数据",
+    "motionPluginLoaded": "leaflet.motion 插件加载成功",
+    "motionPluginFailed": "leaflet.motion 插件未正确加载",
+    "motionResourcesCleanup": "Motion 资源清理完成",
+    "motionOptimized": "Motion 性能优化已启用",
+    "keyAnimationsPreloaded": "关键路径预加载完成"
+  },
+  "errors": {
+    "panelCloseError": "关闭面板时出错",
+    "dragListenerCleanup": "清理拖拽监听器时出错",
+    "coordMappingFailed": "无法匹配坐标",
+    "eventDataLoadFailed": "加载事件数据失败",
+    "eventDataEmpty": "mao_trajectory_events.json 格式错误或事件数据为空",
+    "trajectoryDataEmpty": "轨迹数据为空",
+    "geoDataLoadFailed": "地理数据加载失败",
+    "appInitFailed": "应用初始化失败",
+    "motionPluginError": "leaflet.motion 插件未正确加载，请确保已正确引入插件文件"
+  }
+}
