@@ -914,7 +914,7 @@ function hideFeedbackModal() {
  * 打开GitHub Issues页面
  */
 function openGitHubIssues() {
-  const issuesUrl = "https://github.com/sansan0/mao-map/issues";
+  const issuesUrl = "https://github.com/iTCoffe/mao-map/issues";
   window.open(issuesUrl, "_blank", "noopener,noreferrer");
 }
 
@@ -922,7 +922,7 @@ function openGitHubIssues() {
  * 打开GitHub项目主页
  */
 function openGitHubProject() {
-  const projectUrl = "https://github.com/sansan0/mao-map";
+  const projectUrl = "https://github.com/iTCoffe/mao-map";
   window.open(projectUrl, "_blank", "noopener,noreferrer");
 }
 
@@ -936,58 +936,6 @@ function isMobileDevice() {
   const isSmallScreen = window.innerWidth <= 768;
 
   return mobileRegex.test(userAgent) || (hasTouchScreen && isSmallScreen);
-}
-
-/**
- * 处理微信公众号操作（移动端复制，PC端显示二维码）
- */
-function handleWeChatAction() {
-  hideFeedbackModal();
-
-  if (isMobileDevice()) {
-    copyWeChatName();
-  } else {
-    showWeChatQRModal();
-  }
-}
-
-/**
- * 复制微信公众号名称
- */
-function copyWeChatName() {
-  const wechatName = i18n.t('messages.wechatName');
-
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard
-      .writeText(wechatName)
-      .then(() => {
-        showTemporaryMessage(
-          i18n.t('messages.wechatCopied', { name: wechatName }),
-          "success"
-        );
-      })
-      .catch(() => {
-        showTemporaryMessage(i18n.t('messages.wechatSearch', { name: wechatName }), "info");
-      });
-  } else {
-    try {
-      const textArea = document.createElement("textarea");
-      textArea.value = wechatName;
-      textArea.style.position = "fixed";
-      textArea.style.left = "-9999px";
-      document.body.appendChild(textArea);
-      textArea.select();
-      textArea.setSelectionRange(0, 99999);
-      document.execCommand("copy");
-      document.body.removeChild(textArea);
-      showTemporaryMessage(
-        i18n.t('messages.wechatCopied', { name: wechatName }),
-        "success"
-      );
-    } catch (err) {
-      showTemporaryMessage(i18n.t('messages.wechatSearch', { name: wechatName }), "info");
-    }
-  }
 }
 
 /**
