@@ -64,15 +64,7 @@
       "volume": "音量"
     },
     "feedback": {
-      "title": "意见反馈",
-      "issues": {
-        "title": "问题反馈",
-        "desc": "发现bug或建议改进"
-      },
-      "project": {
-        "title": "项目主页",
-        "desc": "查看源码和文档"
-      },
+      "title": "联系我们",
       "wechat": {
         "title": "企鵝·羣組討論",
         "desc": "© 2022-2026 蜂巢•錦承"
