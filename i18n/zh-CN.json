@@ -66,8 +66,7 @@
     "feedback": {
       "title": "蜂巢·潤之",
       "wechat": {
-        "title": "企鵝·羣組討論",
-        "desc": "© 2022-2026 蜂巢·隱曜"
+        "title": "© 2022-2026 蜂巢·隱曜"
       }
     },
     "panel": {
@@ -102,9 +101,6 @@
     "loading": "正在加载轨迹数据...",
     "loadSuccess": "数据加载完成",
     "loadError": "加载失败",
-    "wechatName": "企鵝【群号:854472073】",
-    "wechatCopied": "{name}",
-    "wechatSearch": "{name}",
     "musicUploadSuccess": "本地音乐文件添加成功",
     "musicUploadError": "请选择有效的音频文件",
     "musicLoadError": "无法加载音频文件，请尝试上传本地文件",
