@@ -64,9 +64,9 @@
       "volume": "Volume"
     },
     "feedback": {
-      "title": "蜂巢·潤之",
+      "title": "蜂巢·隱曜",
       "wechat": {
-        "title": "企鵝·羣組討論",
+        "title": "蜂巢·潤之",
         "desc": "© 2022-2026 蜂巢·隱曜"
       }
     },
@@ -102,7 +102,7 @@
     "loading": "Loading trajectory data...",
     "loadSuccess": "Data loaded successfully",
     "loadError": "Loading failed",
-    "wechatName": "蜂巢·隱曜【群号:854472073】",
+    "wechatName": "© 2026 蜂巢·潤之",
     "wechatCopied": "{name}",
     "wechatSearch": "{name}",
     "musicUploadSuccess": "Local music file added successfully",
