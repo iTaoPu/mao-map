@@ -12,7 +12,7 @@
 
 本项目通过数据可视化的力量，将毛泽东主席自 1893 年至 1976 年波澜壮阔的一生，浓缩于一张可交互的动态地图之上。让那段恢弘的历史"活"起来，清晰、生动地展现伟人在中国历史洪流中的每一个关键抉择与地理印记。
 
-**在线体验：[https://sansan0.github.io/mao-map/](https://sansan0.github.io/mao-map/)**
+**在线体验：[https://iTaoPu.github.io/mao-map/](https://iTaoPu.github.io/mao-map/)**
 
 <p align="center">
   <img src="docs/images/image.png" alt="电脑效果" />
@@ -93,10 +93,12 @@
 
 ## 📞 交流与联系
 
-- **提交贡献/BUG**：请统一通过 [GitHub Issues](https://github.com/sansan0/mao-map/issues) 提交，这是追踪和处理问题最高效的方式。
-- **交流与讨论**：欢迎关注公众号 **【硅基茶水间】**，分享你的想法。
+- **提交贡献/BUG**：请统一通过 [GitHub Issues](https://github.com/iTaoPu/mao-map/issues) 提交，这是追踪和处理问题最高效的方式。
+- **交流与讨论**：欢迎关注公众号 **【言家稗子】**，分享你的想法。
 
-![公众号二维码](https://raw.githubusercontent.com/sansan0/sansan0/refs/heads/master/_image/weixin.png)
+<p align="center">
+  <img src="https://iTaoPu.Github.io/言家稗子-标准色版.png" alt="微信公眾號" />
+</p>
 
 ## 🌟 项目愿景
 
