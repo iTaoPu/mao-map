@@ -64,7 +64,7 @@
       "volume": "音量"
     },
     "feedback": {
-      "title": "關於我們",
+      "title": "蜂巢·隱曜",
       "wechat": {
         "title": "蜂巢·潤之",
         "desc": "© 2022-2026 蜂巢·隱曜"
@@ -102,7 +102,7 @@
     "loading": "正在加载轨迹数据...",
     "loadSuccess": "数据加载完成",
     "loadError": "加载失败",
-    "wechatName": "蜂巢·隱曜",
+    "wechatName": "© 2026 蜂巢·潤之",
     "wechatCopied": "{name}",
     "wechatSearch": "{name}",
     "musicUploadSuccess": "本地音乐文件添加成功",
