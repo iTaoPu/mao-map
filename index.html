@@ -6,7 +6,7 @@
     <title>📍 跟着教员走遍中国 - 毛主席足迹地图</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+      href="https://fastly.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -321,11 +321,11 @@
         </div>
       </div>
 
-      <div id="feedback-backdrop" class="feedback-backdrop"></div>
+ <div id="feedback-backdrop" class="feedback-backdrop"></div>
 
       <div id="feedback-modal" class="feedback-modal">
         <div class="feedback-modal-header">
-          <h3 data-i18n="ui.feedback.title">💬 蜂巢·隱曜</h3>
+          <h3 data-i18n="ui.feedback.title">💬 蜂巢·潤之</h3>
           <button
             class="feedback-modal-close"
             id="feedback-modal-close"
@@ -336,7 +336,7 @@
             ×
           </button>
         </div>
-        <div class="feedback-modal-content">
+        
           <div class="feedback-item" id="feedback-wechat">
             <div class="feedback-icon">🗺️</div>
             <div class="feedback-info">
@@ -358,7 +358,7 @@
         <div class="wechat-qr-content">
           <img src="assets/img/QQ.png" alt="菜鳥驛站·羣組討論" class="wechat-qr-image" />
           <div class="wechat-qr-name">菜鳥驛站·羣組討論</div>
-          <div class="feedback-desc">© 2022-<span class="auto-year"></span> 蜂巢·隱曜</div>
+          <div class="wechat-qr-hint">© 2022-<span class="auto-year"></span> 蜂巢·隱曜</div>
         </div>
       </div>
      
@@ -387,17 +387,17 @@
 
     <audio id="music-audio" preload="none"></audio>
 
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Igor-Vladyka/leaflet.motion/dist/leaflet.motion.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://fastly.jsdelivr.net/gh/Igor-Vladyka/leaflet.motion/dist/leaflet.motion.min.js"></script>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/app.js"></script>
-    
+
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const currentYear = new Date().getFullYear();
+        const year = new Date().getFullYear();
         const yearElements = document.querySelectorAll('.auto-year');
         yearElements.forEach(el => {
-          el.textContent = currentYear;
+          el.textContent = year;
         });
       });
     </script>
