@@ -12,19 +12,15 @@
   </head>
   <body>
     <div id="container">
-      <!-- 语言选择器 -->
       <div id="language-selector" class="language-selector">
         <button class="lang-btn active" data-lang="zh-CN">中文</button>
         <button class="lang-btn" data-lang="en">English</button>
       </div>
 
-      <!-- 地图容器 -->
       <div id="map" class="panel-visible"></div>
 
-      <!-- 悬停检测区域（PC端） -->
       <div id="stats-hover-area"></div>
 
-      <!-- 统计面板（PC端） -->
       <div id="stats-panel">
         <h4 style="margin-bottom: 12px; color: #2c3e50" data-i18n="ui.stats.title">轨迹统计</h4>
         <div class="stats-item">
@@ -48,7 +44,6 @@
           <span class="stats-value" id="time-span">-</span>
         </div>
 
-        <!-- 动画设置 -->
         <div class="animation-settings">
           <h5 style="color: #2c3e50; margin-bottom: 8px; font-size: 12px" data-i18n="ui.animation.settingsTitle">
             动画设置
@@ -89,7 +84,6 @@
         </div>
       </div>
 
-      <!-- 控制面板切换按钮（移动端） -->
       <button
         id="toggle-panel-btn"
         class="toggle-panel-btn"
@@ -100,17 +94,13 @@
         ⚙
       </button>
 
-      <!-- 音乐播放按钮 -->
       <button id="music-btn" class="music-btn" data-i18n="ui.music.title" data-i18n-attr="title" title="背景音乐">🎵</button>
 
-      <!-- 反馈按钮 -->
       <button id="feedback-btn" class="feedback-btn" data-i18n="ui.feedback.title" data-i18n-attr="title" title="意见反馈">
         💬
       </button>
 
-      <!-- 时间轴控制 -->
       <div id="timeline-control">
-        <!-- 当前事件信息（移动端） -->
         <div class="current-event-section">
           <div class="event-info-row">
             <div class="event-date-mobile" id="event-date-mobile">
@@ -155,7 +145,6 @@
             <span class="value">1893-12-26</span>
           </div>
 
-          <!-- 当前事件详情区域（PC端） -->
           <div class="current-event-details">
             <div class="event-date" id="event-date" data-i18n="ui.timeline.loading">加载中...</div>
             <div class="event-title" id="event-title" data-i18n="ui.timeline.loading">加载中...</div>
@@ -170,7 +159,6 @@
 
         <div class="player-controls">
           <div class="player-controls-row">
-            <!-- 播放控制按钮 -->
             <div class="player-buttons">
               <button class="player-btn" id="prev-btn" data-i18n="ui.controls.prev" data-i18n-attr="title" title="上一个事件">
                 ⏮
@@ -181,7 +169,6 @@
               </button>
             </div>
 
-            <!-- 速度控制（移动端） -->
             <div class="speed-control">
               <button class="speed-btn" data-speed="500" data-i18n="ui.controls.speedFast">快</button>
               <button class="speed-btn active" data-speed="1000" data-i18n="ui.controls.speedNormal">中</button>
@@ -189,7 +176,6 @@
             </div>
           </div>
 
-          <!-- 进度条区域 -->
           <div class="progress-section">
             <div class="progress-container">
               <input
@@ -218,7 +204,6 @@
             </div>
           </div>
 
-          <!-- 速度控制（PC端） -->
           <div class="player-speed">
             <label class="speed-label" data-i18n="ui.controls.speed">播放速度</label>
             <div class="custom-select-wrapper">
@@ -245,10 +230,8 @@
         </div>
       </div>
 
-      <!-- 音乐播放弹窗背景遮罩 -->
       <div id="music-backdrop" class="music-backdrop"></div>
 
-      <!-- 音乐播放弹窗 -->
       <div id="music-modal" class="music-modal">
         <div class="music-modal-header">
           <h3 data-i18n="ui.music.title">🎵 背景音乐</h3>
@@ -257,13 +240,11 @@
           </button>
         </div>
         <div class="music-modal-content">
-          <!-- 当前播放歌曲信息 -->
           <div class="current-song-info">
             <div class="song-title" id="current-song-title" data-i18n="ui.music.selectSong">请选择歌曲</div>
             <div class="song-artist" id="current-song-artist">-</div>
           </div>
 
-          <!-- 音乐播放控制 -->
           <div class="music-controls">
             <button
               class="music-control-btn"
@@ -294,7 +275,6 @@
             </button>
           </div>
 
-          <!-- 音乐进度条 -->
           <div class="music-progress-container">
             <div class="music-progress-bar">
               <div class="music-progress-fill" id="music-progress-fill"></div>
@@ -305,7 +285,6 @@
             </div>
           </div>
 
-          <!-- 音量控制 -->
           <div class="music-volume-control">
             <span class="volume-icon">🔊</span>
             <input
@@ -319,13 +298,11 @@
             <span class="volume-value" id="music-volume-value">50%</span>
           </div>
 
-          <!-- 歌曲列表 -->
           <div class="music-playlist">
             <h4 data-i18n="ui.music.playlist">播放列表</h4>
             <div class="playlist-items" id="music-playlist-items"></div>
           </div>
 
-          <!-- 本地音乐上传 -->
           <div class="music-upload-section">
             <h4 data-i18n="ui.music.localMusic">本地音乐</h4>
             <div class="upload-area">
@@ -344,10 +321,8 @@
         </div>
       </div>
 
- <!-- 反馈弹窗背景遮罩 -->
       <div id="feedback-backdrop" class="feedback-backdrop"></div>
 
-      <!-- 反馈弹窗 -->
       <div id="feedback-modal" class="feedback-modal">
         <div class="feedback-modal-header">
           <h3 data-i18n="ui.feedback.title">💬 蜂巢·隱曜</h3>
@@ -361,7 +336,7 @@
             ×
           </button>
         </div>
-        
+        <div class="feedback-modal-content">
           <div class="feedback-item" id="feedback-wechat">
             <div class="feedback-icon">🗺️</div>
             <div class="feedback-info">
@@ -373,10 +348,8 @@
         </div>
       </div>
 
-      <!-- 企鵝二维码弹窗背景遮罩 -->
       <div id="wechat-qr-backdrop" class="wechat-qr-backdrop"></div>
 
-      <!-- 企鵝二维码弹窗 -->
       <div id="wechat-qr-modal" class="wechat-qr-modal">
         <div class="wechat-qr-header">
           <h3>蜂巢·潤之</h3>
@@ -389,10 +362,8 @@
         </div>
       </div>
      
-      <!-- 详细信息面板背景遮罩 -->
       <div id="panel-backdrop" class="panel-backdrop"></div>
 
-      <!-- 详细信息面板 -->
       <div id="location-detail-panel" class="location-detail-panel">
         <div class="panel-header">
           <div class="panel-drag-handle"></div>
@@ -405,23 +376,30 @@
           </button>
         </div>
         <div class="panel-content" id="panel-content">
-          <!-- 事件列表 -->
-        </div>
+          </div>
       </div>
 
-      <!-- 加载提示 -->
       <div id="loading">
         <div class="loading-spinner"></div>
         <div class="loading-text" data-i18n="messages.loading">正在加载轨迹数据...</div>
       </div>
     </div>
 
-    <!-- 音频元素 -->
     <audio id="music-audio" preload="none"></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Igor-Vladyka/leaflet.motion/dist/leaflet.motion.min.js"></script>
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/app.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentYear = new Date().getFullYear();
+        const yearElements = document.querySelectorAll('.auto-year');
+        yearElements.forEach(el => {
+          el.textContent = currentYear;
+        });
+      });
+    </script>
   </body>
 </html>
