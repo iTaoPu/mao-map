@@ -874,8 +874,6 @@ function initFeedbackModal() {
       hideFeedbackModal();
     }
   });
-
-  initWeChatQRModal();
 }
 
 /**
@@ -911,28 +909,11 @@ function hideFeedbackModal() {
 }
 
 /**
- * 检测是否为移动设备
- */
-function isMobileDevice() {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  const mobileRegex = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|tablet/i;
-  const hasTouchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  const isSmallScreen = window.innerWidth <= 768;
-
-  return mobileRegex.test(userAgent) || (hasTouchScreen && isSmallScreen);
-}
-
-/**
- * 处理企鹅操作（移动端复制，PC端显示二维码）
+ * 处理企鹅操作（统一复制名称）
  */
 function handleWeChatAction() {
   hideFeedbackModal();
-
-  if (isMobileDevice()) {
-    copyWeChatName();
-  } else {
-    showWeChatQRModal();
-  }
+  copyWeChatName();
 }
 
 /**
@@ -972,64 +953,6 @@ function copyWeChatName() {
       showTemporaryMessage(i18n.t('messages.wechatSearch', { name: wechatName }), "info");
     }
   }
-}
-
-/**
- * 显示企鹅二维码弹窗
- */
-function showWeChatQRModal() {
-  const modal = document.getElementById("wechat-qr-modal");
-  const backdrop = document.getElementById("wechat-qr-backdrop");
-
-  if (modal && backdrop) {
-    backdrop.classList.add("visible");
-    modal.classList.add("visible");
-    document.body.style.overflow = "hidden";
-  }
-}
-
-/**
- * 隐藏企鹅二维码弹窗
- */
-function hideWeChatQRModal() {
-  const modal = document.getElementById("wechat-qr-modal");
-  const backdrop = document.getElementById("wechat-qr-backdrop");
-
-  if (modal && backdrop) {
-    backdrop.classList.remove("visible");
-    modal.classList.remove("visible");
-    document.body.style.overflow = "";
-  }
-}
-
-/**
- * 初始化企鹅二维码弹窗
- */
-function initWeChatQRModal() {
-  const backdrop = document.getElementById("wechat-qr-backdrop");
-  const closeBtn = document.getElementById("wechat-qr-close");
-  const modal = document.getElementById("wechat-qr-modal");
-
-  if (backdrop) {
-    backdrop.addEventListener("click", hideWeChatQRModal);
-  }
-
-  if (closeBtn) {
-    closeBtn.addEventListener("click", hideWeChatQRModal);
-  }
-
-  if (modal) {
-    modal.addEventListener("click", (e) => e.stopPropagation());
-  }
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      const modal = document.getElementById("wechat-qr-modal");
-      if (modal && modal.classList.contains("visible")) {
-        hideWeChatQRModal();
-      }
-    }
-  });
 }
 
 /**
