@@ -1,7 +1,6 @@
 /*!
  * 轻量级 i18n 引擎
  * 用于毛泽东生平地理轨迹可视化项目的多语言支持
- * 修改说明：新增 copyText 方法，方便复制企鹅名称；确保无二维码相关代码
  */
 
 class I18n {
@@ -193,32 +192,6 @@ class I18n {
     const promises = this.supportedLocales.map(locale => this.loadLocale(locale));
     await Promise.all(promises);
     console.log('所有语言包预加载完成');
-  }
-
-  /**
-   * 新增：复制指定翻译键对应的文本（如企鹅名称）
-   * 使用 Clipboard API 将文本复制到剪贴板
-   * @param {string} key 翻译键
-   * @param {object} variables 插值变量（可选）
-   * @returns {Promise<boolean>} 是否复制成功
-   */
-  async copyText(key, variables = {}) {
-    const text = this.t(key, variables);
-    if (!text || text === key) {
-      console.warn(`无法复制：翻译键 "${key}" 无有效文本`);
-      return false;
-    }
-
-    try {
-      await navigator.clipboard.writeText(text);
-      console.log(`复制成功: ${text}`);
-      return true;
-    } catch (err) {
-      console.error('复制失败:', err);
-      // 降级方案：提示用户手动复制
-      alert(`复制失败，请手动复制：${text}`);
-      return false;
-    }
   }
 }
 
