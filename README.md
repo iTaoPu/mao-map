@@ -4,7 +4,7 @@
 
 [![PC端访问](https://img.shields.io/badge/PC端-支持-4285F4?style=flat-square&logo=windows&logoColor=white)](#)
 [![移动端访问](https://img.shields.io/badge/移动端-支持-4285F4?style=flat-square&logo=android&logoColor=white)](#)
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-在线访问-4285F4?style=flat-square&logo=github&logoColor=white)](https://sansan0.github.io/mao-map)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-在线访问-4285F4?style=flat-square&logo=github&logoColor=white)](https://iTaoPu.github.io/mao-map)
 
 </div>
 
