@@ -1,0 +1,2020 @@
+{
+  "title": "Mao Zedong's Life Journey (1893-1976)",
+  "events": [
+    {
+      "date": "1893-12-26",
+      "age": 0,
+      "movementType": "Birth",
+      "event": "Mao Zedong was born, courtesy name Yongzhi (later changed to Runzhi), childhood name \"Shi San Yazi\"",
+      "coordinates": {
+        "start": null,
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1902-03",
+      "age": 8,
+      "movementType": "Local Activity",
+      "event": "Returned to Shaoshan from grandfather's home and entered private school, taught by teacher Zou Chunpei",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1903",
+      "age": 10,
+      "movementType": "Short-distance Movement",
+      "event": "Ran to Xiangtan County town out of fear of father's punishment for skipping school, found and brought back after three days",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "transit": [
+          {
+            "province": "Hunan Province",
+            "city": "Xiangtan City",
+            "district": "Xiangtan County"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1910-10",
+      "age": 17,
+      "movementType": "Short-distance Movement",
+      "event": "Left home to pursue studies, left poem: \"The child is determined to leave the hometown, vowing not to return unless achieving fame\"",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Xiangxiang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-03",
+      "age": 17,
+      "movementType": "Short-distance Movement",
+      "event": "Admitted to Xiangxiang Provincial Middle School, first exposure to revolutionary thought",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Xiangxiang City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-05",
+      "age": 17,
+      "movementType": "Local Activity",
+      "event": "Participated in the Railway Protection Movement, led the cutting of pigtails",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-10-24",
+      "age": 17,
+      "movementType": "Local Activity",
+      "event": "Enlisted as a soldier, participated in the Xinhai Revolution",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1913-03",
+      "age": 19,
+      "movementType": "Local Activity",
+      "event": "Admitted to Hunan Provincial Fourth Normal School with top grades",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1914-03",
+      "age": 20,
+      "movementType": "Local Activity",
+      "event": "Transferred to Hunan Provincial First Normal School",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1917-07",
+      "age": 23,
+      "movementType": "Short-distance Movement",
+      "event": "Traveled on foot through five Hunan counties with Xiao Zisheng for educational purposes, lasting one and a half months, covering over 900 li",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "transit": [
+          {
+            "province": "Hunan Province",
+            "city": "Changsha City",
+            "district": "Ningxiang City"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Yiyang City",
+            "district": "Anhua County"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Yiyang City"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Yiyang City",
+            "district": "Yuanjiang City"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-04-14",
+      "age": 24,
+      "movementType": "Local Activity",
+      "event": "Founded the New People's Study Society",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-06",
+      "age": 24,
+      "movementType": "Local Activity",
+      "event": "Graduated from Hunan First Normal School",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-08-19",
+      "age": 24,
+      "movementType": "Long-distance Movement",
+      "event": "First arrival in Beijing to organize Hunan youth for work-study programs in France",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-10",
+      "age": 24,
+      "movementType": "Local Activity",
+      "event": "Worked as assistant librarian at Peking University Library, met Li Dazhao through Yang Changji's introduction",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-03-12",
+      "age": 25,
+      "movementType": "Long-distance Movement",
+      "event": "Returned to Hunan due to mother's serious illness",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "transit": [
+          {
+            "province": "Shanghai Municipality",
+            "city": "Shanghai City"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-05",
+      "age": 25,
+      "movementType": "Local Activity",
+      "event": "Actively responded to the May Fourth Movement, led Hunan students' anti-imperialist patriotic movement",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-07-14",
+      "age": 25,
+      "movementType": "Local Activity",
+      "event": "Founded and edited the 'Xiang River Review'",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-02",
+      "age": 26,
+      "movementType": "Long-distance Movement",
+      "event": "Went to Beijing again to launch the campaign to expel Zhang, then visited Chen Duxiu in Shanghai",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        },
+        "transit": [
+          {
+            "province": "Beijing Municipality",
+            "city": "Beijing City"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-06-18",
+      "age": 26,
+      "movementType": "Local Activity",
+      "event": "Published 'Self-Determination for the Hunan People' in 'Shishi Xinbao'",
+      "coordinates": {
+        "start": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        },
+        "end": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-09-03",
+      "age": 26,
+      "movementType": "Local Activity",
+      "event": "Published 'The Fundamental Question of Hunan Reconstruction - The Hunan Republic' in 'Ta Kung Pao'",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-10",
+      "age": 26,
+      "movementType": "Local Activity",
+      "event": "Secretly organized early Communist Party organization, established Changsha Communist Group",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-07-23",
+      "age": 27,
+      "movementType": "Long-distance Movement",
+      "event": "Attended the First National Congress of the Communist Party of China",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City",
+          "district": "Xuhui District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-08-03",
+      "age": 27,
+      "movementType": "Long-distance Movement",
+      "event": "First Congress of CPC concluded on a boat in Nanhu, the Communist Party of China was officially established",
+      "coordinates": {
+        "start": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City",
+          "district": "Xuhui District"
+        },
+        "end": {
+          "province": "Zhejiang Province",
+          "city": "Jiaxing City",
+          "district": "Nanhu District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-10-10",
+      "age": 27,
+      "movementType": "Local Activity",
+      "event": "Founded the CPC Hunan Branch and served as secretary",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1922-09",
+      "age": 28,
+      "movementType": "Local Activity",
+      "event": "Joined the Kuomintang during the First United Front of the KMT and CPC",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1923-06-12",
+      "age": 29,
+      "movementType": "Long-distance Movement",
+      "event": "Attended the Third National Congress of CPC, elected as member of the Central Executive Committee",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-01-20",
+      "age": 30,
+      "movementType": "Local Activity",
+      "event": "Attended the First National Congress of the Kuomintang",
+      "coordinates": {
+        "start": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        },
+        "end": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-02",
+      "age": 30,
+      "movementType": "Long-distance Movement",
+      "event": "Served as secretary of the Organization Department of the KMT Shanghai Executive Bureau",
+      "coordinates": {
+        "start": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        },
+        "end": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-05",
+      "age": 30,
+      "movementType": "Local Activity",
+      "event": "Also served as head of the Organization Department of the CPC Central Committee",
+      "coordinates": {
+        "start": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        },
+        "end": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1925-06",
+      "age": 31,
+      "movementType": "Long-distance Movement",
+      "event": "Established the CPC Shaoshan Branch",
+      "coordinates": {
+        "start": {
+          "province": "Shanghai Municipality",
+          "city": "Shanghai City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1925-10-05",
+      "age": 31,
+      "movementType": "Long-distance Movement",
+      "event": "Recommended as acting head of the KMT Propaganda Department",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Xiangtan City",
+          "district": "Shaoshan City"
+        },
+        "end": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1926-01-28",
+      "age": 32,
+      "movementType": "Local Activity",
+      "event": "First close encounter with Chiang Kai-shek at the Second National Congress of the KMT",
+      "coordinates": {
+        "start": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        },
+        "end": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1926-03-19",
+      "age": 32,
+      "movementType": "Local Activity",
+      "event": "Served as director of the 6th Session of the Peasant Movement Training Institute of the KMT",
+      "coordinates": {
+        "start": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        },
+        "end": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-01-04",
+      "age": 33,
+      "movementType": "Long-distance Movement",
+      "event": "Investigated peasant movement in Xiangtan, Xiangxiang, Hengshan, Liling and Changsha for 32 days",
+      "coordinates": {
+        "start": {
+          "province": "Guangdong Province",
+          "city": "Guangzhou City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "transit": [
+          {
+            "province": "Hunan Province",
+            "city": "Xiangtan City"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Xiangtan City",
+            "district": "Xiangxiang City"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Hengyang City",
+            "district": "Hengshan County"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Zhuzhou City",
+            "district": "Liling City"
+          },
+          {
+            "province": "Hunan Province",
+            "city": "Changsha City"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-02",
+      "age": 33,
+      "movementType": "Long-distance Movement",
+      "event": "Wrote 'Report on an Investigation of the Peasant Movement in Hunan' based on the investigation",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Hubei Province",
+          "city": "Wuhan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-08-07",
+      "age": 33,
+      "movementType": "Local Activity",
+      "event": "Attended the August 7th Conference, put forward the famous proposition that 'political power grows out of the barrel of a gun'",
+      "coordinates": {
+        "start": {
+          "province": "Hubei Province",
+          "city": "Wuhan City"
+        },
+        "end": {
+          "province": "Hubei Province",
+          "city": "Wuhan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-09-09",
+      "age": 33,
+      "movementType": "Long-distance Movement",
+      "event": "Led the Autumn Harvest Uprising on the Hunan-Jiangxi border",
+      "coordinates": {
+        "start": {
+          "province": "Hubei Province",
+          "city": "Wuhan City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-09-29",
+      "age": 33,
+      "movementType": "Long-distance Movement",
+      "event": "Presided over the 'Sanwan Reorganization'",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Pingxiang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-10-27",
+      "age": 33,
+      "movementType": "Short-distance Movement",
+      "event": "Led the Autumn Harvest Uprising troops to arrive at Jinggangshan",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Pingxiang City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City",
+          "district": "Jinggangshan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-04-28",
+      "age": 34,
+      "movementType": "Local Activity",
+      "event": "Zhu-Mao Meeting, troops led by Zhu De and Chen Yi from the Nanchang Uprising successfully joined forces with Mao Zedong's Autumn Harvest Uprising troops",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-05-04",
+      "age": 34,
+      "movementType": "Local Activity",
+      "event": "Held a meeting to officially announce the establishment of the Fourth Army of Workers' and Peasants' Revolutionary Army",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-05-20",
+      "age": 34,
+      "movementType": "Local Activity",
+      "event": "Presided over the First Congress of the Party on the Hunan-Jiangxi border, served as secretary of the special committee",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1929-12-28",
+      "age": 36,
+      "movementType": "Long-distance Movement",
+      "event": "Presided over the Ninth Congress of the Fourth Red Army (Gutian Conference)",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        },
+        "end": {
+          "province": "Fujian Province",
+          "city": "Longyan City",
+          "district": "Shanghang County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-01-05",
+      "age": 36,
+      "movementType": "Local Activity",
+      "event": "Wrote 'A Single Spark Can Start a Prairie Fire' in reply to Lin Biao",
+      "coordinates": {
+        "start": {
+          "province": "Fujian Province",
+          "city": "Longyan City",
+          "district": "Shanghang County"
+        },
+        "end": {
+          "province": "Fujian Province",
+          "city": "Longyan City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-08-23",
+      "age": 36,
+      "movementType": "Long-distance Movement",
+      "event": "First Red Army Corps and Third Red Army Corps joined forces to form the First Red Army Front",
+      "coordinates": {
+        "start": {
+          "province": "Fujian Province",
+          "city": "Longyan City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-12-30",
+      "age": 37,
+      "movementType": "Long-distance Movement",
+      "event": "Victory in the Battle of Longgang during the First Counter-Encirclement Campaign, captured enemy frontline commander Zhang Huizan alive",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Changsha City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1931-11-07",
+      "age": 38,
+      "movementType": "Short-distance Movement",
+      "event": "First National Congress of the Chinese Soviet Republic convened, elected as chairman of the Central Executive Committee",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ji'an City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ganzhou City",
+          "district": "Ruijin City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1934-10-10",
+      "age": 40,
+      "movementType": "Local Activity",
+      "event": "The Central Red Army began the Long March",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ganzhou City",
+          "district": "Ruijin City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Ganzhou City",
+          "district": "Ruijin City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1934-12-12",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Tongdao Conference, Mao proposed to abandon the plan to join the Second and Sixth Red Army Corps in western Hunan",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Ganzhou City",
+          "district": "Ruijin City"
+        },
+        "end": {
+          "province": "Hunan Province",
+          "city": "Huaihua City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-01-15",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Zunyi Conference, Mao Zedong was added as member of the CPC Central Political Bureau Standing Committee",
+      "coordinates": {
+        "start": {
+          "province": "Hunan Province",
+          "city": "Huaihua City"
+        },
+        "end": {
+          "province": "Guizhou Province",
+          "city": "Zunyi City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-01-29",
+      "age": 41,
+      "movementType": "Short-distance Movement",
+      "event": "First Crossing of Chishui River (crossed Chishui River from Tucheng after defeat in the Battle of Tucheng)",
+      "coordinates": {
+        "start": {
+          "province": "Guizhou Province",
+          "city": "Zunyi City"
+        },
+        "end": {
+          "province": "Guizhou Province",
+          "city": "Zunyi City",
+          "district": "Xishui County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-02-18",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Second Crossing of Chishui River (advanced eastward from Zhaxi, crossed Chishui River via Taipingdu and Erlangtan, returned to northern Guizhou)",
+      "coordinates": {
+        "start": {
+          "province": "Yunnan Province",
+          "city": "Zhaotong City",
+          "district": "Weixin County"
+        },
+        "end": {
+          "province": "Guizhou Province",
+          "city": "Zunyi City",
+          "district": "Tongzi County"
+        },
+        "transit": [
+          {
+            "province": "Sichuan Province",
+            "city": "Luzhou City",
+            "district": "Gulin County"
+          },
+          {
+            "province": "Guizhou Province",
+            "city": "Zunyi City",
+            "district": "Renhuai City"
+          }
+        ]
+      },
+      "verification": "According to historical records: On February 18, the vanguard Second Division of the First Red Army Corps arrived at Taipingdu, and the Third Red Army Corps arrived at Erlangtan; on February 20, all troops crossed Chishui River into northern Guizhou; on February 24, Tongzi County was captured"
+    },
+    {
+      "date": "1935-03-16",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Third Crossing of Chishui River (crossed the river from Maotai into southern Sichuan, creating a false impression of crossing the Yangtze River northward to mislead the enemy)",
+      "coordinates": {
+        "start": {
+          "province": "Guizhou Province",
+          "city": "Zunyi City",
+          "district": "Renhuai City"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Luzhou City",
+          "district": "Gulin County"
+        },
+        "transit": [
+          {
+            "province": "Sichuan Province",
+            "city": "Luzhou City",
+            "district": "Gulin County"
+          }
+        ]
+      },
+      "verification": "Historical records: On March 16, the Red Army crossed Chishui for the third time from Maotai using a pontoon bridge, advancing toward Gulin; on March 19, engaged and defeated Wei Kai's Sichuan forces at Zhenlongshan, entered the Lianghekou area, successfully leading Chiang Kai-shek to firmly believe in the Red Army's intention to cross the Yangtze River northward"
+    },
+    {
+      "date": "1935-03-21",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Fourth Crossing of Chishui River (turned back and crossed eastward from southern Sichuan, successfully broke out of the Nationalist encirclement)",
+      "coordinates": {
+        "start": {
+          "province": "Sichuan Province",
+          "city": "Luzhou City",
+          "district": "Gulin County"
+        },
+        "end": {
+          "province": "Guizhou Province",
+          "city": "Guiyang City",
+          "district": "Xifeng County"
+        },
+        "transit": [
+          {
+            "province": "Guizhou Province",
+            "city": "Zunyi City",
+            "district": "Renhuai City"
+          },
+          {
+            "province": "Sichuan Province",
+            "city": "Luzhou City",
+            "district": "Gulin County"
+          },
+          {
+            "province": "Guizhou Province",
+            "city": "Zunyi City",
+            "district": "Xishui County"
+          },
+          {
+            "province": "Guizhou Province",
+            "city": "Zunyi City",
+            "district": "Bozhou District"
+          },
+          {
+            "province": "Guizhou Province",
+            "city": "Guiyang City",
+            "district": "Wudang District"
+          }
+        ]
+      },
+      "verification": "Historical records: On March 21, the Red Army crossed Chishui eastward from Erlangtan, Jiuxikou, and Taipingdu; on March 24, passed through the Zunyi-Huairen road and continued southward; on March 29, captured Wujiang River crossing; on March 30-31, crossed Wujiang River southward into the northwest of Xifeng, Huanggang, Niuchang and other areas, successfully broke out of the Nationalist encirclement"
+    },
+    {
+      "date": "1935-05-03",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Cleverly Crossed the Jinsha River (crossed Jinsha River at Jiaopingdu)",
+      "coordinates": {
+        "start": {
+          "province": "Guizhou Province",
+          "city": "Bijie City"
+        },
+        "end": {
+          "province": "Yunnan Province",
+          "city": "Zhaotong City",
+          "district": "Qiaojia County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-05-25",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Forced Crossing of the Dadu River (crossed Dadu River at Anshunchang)",
+      "coordinates": {
+        "start": {
+          "province": "Yunnan Province",
+          "city": "Zhaotong City"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Ya'an City",
+          "district": "Shimian County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-05-29",
+      "age": 41,
+      "movementType": "Short-distance Movement",
+      "event": "Seizing of Luding Bridge",
+      "coordinates": {
+        "start": {
+          "province": "Sichuan Province",
+          "city": "Ya'an City",
+          "district": "Shimian County"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Ganzi Tibetan Autonomous Prefecture",
+          "district": "Luding County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-06-17",
+      "age": 41,
+      "movementType": "Short-distance Movement",
+      "event": "Mao Zedong crossed Jiajin Mountain (from Baoxing to Xiaojin)",
+      "coordinates": {
+        "start": {
+          "province": "Sichuan Province",
+          "city": "Ya'an City",
+          "district": "Baoxing County"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Aba Tibetan and Qiang Autonomous Prefecture",
+          "district": "Xiaojin County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-08-21",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Began crossing the grasslands (Zoige Grassland)",
+      "coordinates": {
+        "start": {
+          "province": "Sichuan Province",
+          "city": "Aba Tibetan and Qiang Autonomous Prefecture",
+          "district": "Xiaojin County"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Aba Tibetan and Qiang Autonomous Prefecture",
+          "district": "Zoige County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-09-12",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Ejie Conference, decided to reorganize the First and Third Army Corps and Central Column into the Chinese Workers' and Peasants' Red Army Shaan-Gan Column",
+      "coordinates": {
+        "start": {
+          "province": "Sichuan Province",
+          "city": "Aba Tibetan and Qiang Autonomous Prefecture",
+          "district": "Zoige County"
+        },
+        "end": {
+          "province": "Gansu Province",
+          "city": "Gannan Tibetan Autonomous Prefecture",
+          "district": "Diebu County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-10-19",
+      "age": 41,
+      "movementType": "Long-distance Movement",
+      "event": "Successful conclusion of the Long March, Central Red Army arrived at the Shaan-Gan revolutionary base (Wuqi Town)",
+      "coordinates": {
+        "start": {
+          "province": "Gansu Province",
+          "city": "Gannan Tibetan Autonomous Prefecture",
+          "district": "Diebu County"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City",
+          "district": "Wuqi County"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-12-17",
+      "age": 42,
+      "movementType": "Local Activity",
+      "event": "Wayaobu Conference, formulated the anti-Japanese national united front strategy",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1936",
+      "age": 42,
+      "movementType": "Local Activity",
+      "event": "Served as chairman of the Central Revolutionary Military Commission",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937-01-13",
+      "age": 43,
+      "movementType": "Local Activity",
+      "event": "CPC Central Committee officially relocated to Yan'an, beginning '13 years in Yan'an'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937",
+      "age": 43,
+      "movementType": "Local Activity",
+      "event": "Wrote 'On Practice' and 'On Contradiction'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937-08-22",
+      "age": 43,
+      "movementType": "Local Activity",
+      "event": "Luochuan Conference, determined the strategic policy of prolonged war",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1938-05-26",
+      "age": 44,
+      "movementType": "Local Activity",
+      "event": "Published 'On Protracted War'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1939-10-04",
+      "age": 45,
+      "movementType": "Local Activity",
+      "event": "Published the inaugural issue of 'The Communist', pointing out that the united front, armed struggle, and Party building are the three magic weapons for the Chinese Communist Party to defeat the enemy in the Chinese revolution",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": "https://www.12371.cn/2021/09/27/ARTI1632747810006980.shtml CPC Member Network",
+      "userVerification": [
+        {
+          "username": "@DoWhat6",
+          "comment": "",
+          "date": "2025-07-11"
+        }
+      ]
+    },
+    {
+      "date": "1940-01-09",
+      "age": 46,
+      "movementType": "Local Activity",
+      "event": "Published 'On New Democracy'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1942-02-01",
+      "age": 48,
+      "movementType": "Local Activity",
+      "event": "Rectification Movement was fully launched, delivered the report 'Rectify the Party's Style of Work'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1942-05-02",
+      "age": 48,
+      "movementType": "Local Activity",
+      "event": "Yan'an Forum on Literature and Art, delivered 'Talks at the Yan'an Forum on Literature and Art'",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1943-03",
+      "age": 49,
+      "movementType": "Local Activity",
+      "event": "Elected as chairman of the Central Political Bureau and chairman of the Central Secretariat",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-04-23",
+      "age": 51,
+      "movementType": "Local Activity",
+      "event": "Seventh National Congress of CPC, Mao Zedong Thought was established as the Party's guiding ideology",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-08-28",
+      "age": 51,
+      "movementType": "Long-distance Movement",
+      "event": "Arrived in Chongqing to begin KMT-CPC negotiations",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Chongqing Municipality",
+          "city": "Chongqing Urban Area",
+          "district": "Yuzhong District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-10-10",
+      "age": 51,
+      "movementType": "Local Activity",
+      "event": "Signed the 'Double Tenth Agreement'",
+      "coordinates": {
+        "start": {
+          "province": "Chongqing Municipality",
+          "city": "Chongqing Urban Area",
+          "district": "Yuzhong District"
+        },
+        "end": {
+          "province": "Chongqing Municipality",
+          "city": "Chongqing Urban Area",
+          "district": "Yuzhong District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1947-03-18",
+      "age": 53,
+      "movementType": "Long-distance Movement",
+      "event": "Led the CPC Central Committee to evacuate Yan'an, began fighting in northern Shaanxi",
+      "coordinates": {
+        "start": {
+          "province": "Chongqing Municipality",
+          "city": "Chongqing Urban Area",
+          "district": "Yuzhong District"
+        },
+        "end": {
+          "province": "Northern Shaanxi Province",
+          "city": "Yan'an City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1947-07-21",
+      "age": 53,
+      "movementType": "Short-distance Movement",
+      "event": "Convened Xiaohe Conference, determined the deployment of strategic counteroffensive",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yan'an City"
+        },
+        "end": {
+          "province": "Shaanxi Province",
+          "city": "Yulin City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-05-26",
+      "age": 54,
+      "movementType": "Long-distance Movement",
+      "event": "Arrived at Xibaipo and joined with the Central Working Committee",
+      "coordinates": {
+        "start": {
+          "province": "Shaanxi Province",
+          "city": "Yulin City"
+        },
+        "end": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-09-12",
+      "age": 54,
+      "movementType": "Local Activity",
+      "event": "Commanded the Liaoshen Campaign",
+      "coordinates": {
+        "start": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        },
+        "end": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-11-06",
+      "age": 54,
+      "movementType": "Local Activity",
+      "event": "Commanded the Huaihai Campaign",
+      "coordinates": {
+        "start": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        },
+        "end": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-11-29",
+      "age": 54,
+      "movementType": "Local Activity",
+      "event": "Commanded the Pingjin Campaign",
+      "coordinates": {
+        "start": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        },
+        "end": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-03-05",
+      "age": 55,
+      "movementType": "Local Activity",
+      "event": "Presided over the Second Plenary Session of the Seventh Central Committee of CPC, put forward the 'Two Musts'",
+      "coordinates": {
+        "start": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        },
+        "end": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-03-25",
+      "age": 55,
+      "movementType": "Long-distance Movement",
+      "event": "Moved into Xiangshan (Fragrant Hills)",
+      "coordinates": {
+        "start": {
+          "province": "Hebei Province",
+          "city": "Shijiazhuang City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Haidian District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-04-21",
+      "age": 55,
+      "movementType": "Local Activity",
+      "event": "Issued 'Order to Advance to All of China'",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Haidian District"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Haidian District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-10-01",
+      "age": 55,
+      "movementType": "Local Activity",
+      "event": "Announced the founding of the People's Republic of China",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Haidian District"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Haidian District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-12-16",
+      "age": 56,
+      "movementType": "International Movement",
+      "event": "First foreign visit, first meeting with (Soviet Union) Stalin",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "country": "Russia",
+          "city": "Moscow"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1950-02-14",
+      "age": 56,
+      "movementType": "Local Activity",
+      "event": "Signed the 'Sino-Soviet Treaty of Friendship, Alliance and Mutual Assistance'",
+      "coordinates": {
+        "start": {
+          "country": "Russia",
+          "city": "Moscow"
+        },
+        "end": {
+          "country": "Russia",
+          "city": "Moscow"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1950-10-04",
+      "age": 56,
+      "movementType": "International Movement",
+      "event": "Enlarged meeting of the Central Political Bureau, made the major strategic decision to 'Resist America and Aid Korea, Defend the Homeland'",
+      "coordinates": {
+        "start": {
+          "country": "Russia",
+          "city": "Moscow"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1954-09-27",
+      "age": 60,
+      "movementType": "Local Activity",
+      "event": "Elected as the first Chairman of the People's Republic of China (First Session of the First National People's Congress)",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1956-04-25",
+      "age": 62,
+      "movementType": "Local Activity",
+      "event": "Enlarged meeting of the Central Political Bureau, delivered important speech 'On the Ten Major Relationships'",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1956-09-15",
+      "age": 62,
+      "movementType": "Local Activity",
+      "event": "Eighth National Congress of CPC opened, delivered opening speech",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1957-11-02",
+      "age": 63,
+      "movementType": "International Movement",
+      "event": "Second and last foreign visit",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City",
+          "district": "Xicheng District"
+        },
+        "end": {
+          "country": "Russia",
+          "city": "Moscow"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1958-03-27",
+      "age": 64,
+      "movementType": "Short-distance Movement",
+      "event": "Inspected China's first (1955) natural gas industrial mine - Longchang Gas Mine",
+      "coordinates": {
+        "start": {
+          "country": "Sichuan Province",
+          "city": "Chengdu City"
+        },
+        "end": {
+          "province": "Sichuan Province",
+          "city": "Neijiang City",
+          "district": "Longchang City"
+        }
+      },
+      "verification": "http://scdfz.sc.gov.cn/whzh/slzc1/content_16893 Sichuan Party History, 1995 'Mao Zedong and Sichuan' compiled by CPC Sichuan Provincial Committee Party History Research Office",
+      "userVerification": [
+        {
+          "username": "@troilus",
+          "comment": "Project author's note: The first issue of this project",
+          "date": "2025-07-01"
+        }
+      ]
+    },
+    {
+      "date": "1958-05-05",
+      "age": 64,
+      "movementType": "Local Activity",
+      "event": "Second Session of the Eighth National Congress of CPC, passed the general line of 'going all out, aiming high, and achieving greater, faster, better and more economical results in building socialism'",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1958-08-23",
+      "age": 64,
+      "movementType": "Long-distance Movement",
+      "event": "Began shelling of Kinmen (Quemoy)",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Fujian Province",
+          "city": "Xiamen City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1959-07-02",
+      "age": 65,
+      "movementType": "Long-distance Movement",
+      "event": "Lushan Conference, mistakenly launched the 'anti-rightist' struggle",
+      "coordinates": {
+        "start": {
+          "province": "Fujian Province",
+          "city": "Xiamen City"
+        },
+        "end": {
+          "province": "Jiangxi Province",
+          "city": "Jiujiang City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1962-01-11",
+      "age": 68,
+      "movementType": "Long-distance Movement",
+      "event": "Seven Thousand Cadres Conference, initially summarized the experience and lessons of the 'Great Leap Forward'",
+      "coordinates": {
+        "start": {
+          "province": "Jiangxi Province",
+          "city": "Jiujiang City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1964",
+      "age": 70,
+      "movementType": "Local Activity",
+      "event": "Launched the Four Cleanups Movement",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-05-16",
+      "age": 72,
+      "movementType": "Local Activity",
+      "event": "Enlarged meeting of the Central Political Bureau passed the 'May 16 Notification', marking the official launch of the Cultural Revolution",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-08-05",
+      "age": 72,
+      "movementType": "Local Activity",
+      "event": "Wrote 'Bombard the Headquarters - My Big Character Poster'",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-08-18",
+      "age": 72,
+      "movementType": "Local Activity",
+      "event": "First reception of Red Guards, wearing military uniform and Red Guard armband",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1969-04-01",
+      "age": 75,
+      "movementType": "Local Activity",
+      "event": "Presided over the Ninth National Congress of CPC, established Lin Biao as successor",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1971-09-13",
+      "age": 77,
+      "movementType": "Local Activity",
+      "event": "Lin Biao died in plane crash, learned of the 'September 13 Incident'",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1972-02-21",
+      "age": 78,
+      "movementType": "Local Activity",
+      "event": "Met with US President Nixon, achieved historic breakthrough in Sino-US relations",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1972-09-25",
+      "age": 78,
+      "movementType": "Local Activity",
+      "event": "Met with Japanese Prime Minister Kakuei Tanaka, decided on normalization of Sino-Japanese diplomatic relations",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1975-05-03",
+      "age": 81,
+      "movementType": "Local Activity",
+      "event": "Presided over the last Central Political Bureau meeting",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1976-04-07",
+      "age": 82,
+      "movementType": "Local Activity",
+      "event": "Proposed Hua Guofeng as First Vice Chairman of the CPC Central Committee",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1976-09-09",
+      "age": 82,
+      "movementType": "Local Activity",
+      "event": "Mao Zedong's heart stopped beating, passed away at age 82",
+      "coordinates": {
+        "start": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        },
+        "end": {
+          "province": "Beijing Municipality",
+          "city": "Beijing City"
+        }
+      },
+      "verification": ""
+    }
+  ]
+}

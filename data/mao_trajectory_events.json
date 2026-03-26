@@ -1,0 +1,2037 @@
+{
+  "title": "毛泽东生平地理轨迹（1893-1976年）",
+  "events": [
+    {
+      "date": "1893-12-26",
+      "age": 0,
+      "movementType": "出生",
+      "event": "毛泽东出生，字咏芝（后改润之），乳名\"石三伢子\"",
+      "coordinates": {
+        "start": null,
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1902-03",
+      "age": 8,
+      "movementType": "原地活动",
+      "event": "从外祖父家回韶山入私塾发蒙，塾师邹春培",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1903",
+      "age": 10,
+      "movementType": "短途移动",
+      "event": "因逃学害怕父亲责打，往湘潭县城跑，三天后被找回",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "transit": [
+          {
+            "province": "湖南省",
+            "city": "湘潭市",
+            "district": "湘潭县"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1910-10",
+      "age": 17,
+      "movementType": "短途移动",
+      "event": "离家求学，留诗：\"孩儿立志出乡关，学不成名誓不还\"",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "湘乡市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-03",
+      "age": 17,
+      "movementType": "短途移动",
+      "event": "考入湘乡驻省中学堂，首次接触革命思想",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "湘乡市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-05",
+      "age": 17,
+      "movementType": "原地活动",
+      "event": "参与保路运动，带头剪去辫子",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1911-10-24",
+      "age": 17,
+      "movementType": "原地活动",
+      "event": "入伍当列兵，参与辛亥革命",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1913-03",
+      "age": 19,
+      "movementType": "原地活动",
+      "event": "以第一名成绩考入湖南省立第四师范学校",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1914-03",
+      "age": 20,
+      "movementType": "原地活动",
+      "event": "转入湖南省立第一师范学校",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1917-07",
+      "age": 23,
+      "movementType": "短途移动",
+      "event": "与萧子升徒步游学湖南五县，历时一个半月，行程900余里",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "transit": [
+          {
+            "province": "湖南省",
+            "city": "长沙市",
+            "district": "宁乡市"
+          },
+          {
+            "province": "湖南省",
+            "city": "益阳市",
+            "district": "安化县"
+          },
+          {
+            "province": "湖南省",
+            "city": "益阳市"
+          },
+          {
+            "province": "湖南省",
+            "city": "益阳市",
+            "district": "沅江市"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-04-14",
+      "age": 24,
+      "movementType": "原地活动",
+      "event": "发起成立新民学会",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-06",
+      "age": 24,
+      "movementType": "原地活动",
+      "event": "从湖南第一师范学校毕业",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-08-19",
+      "age": 24,
+      "movementType": "长途移动",
+      "event": "第一次到达北京，为组织湖南青年赴法勤工俭学",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1918-10",
+      "age": 24,
+      "movementType": "原地活动",
+      "event": "在北大图书馆任助理员，经杨昌济介绍认识李大钊",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-03-12",
+      "age": 25,
+      "movementType": "长途移动",
+      "event": "因母亲病重返湘",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "transit": [
+          {
+            "province": "上海市",
+            "city": "上海市"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-05",
+      "age": 25,
+      "movementType": "原地活动",
+      "event": "五四运动爆发后积极响应，领导湖南学生反帝爱国运动",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1919-07-14",
+      "age": 25,
+      "movementType": "原地活动",
+      "event": "创办并主编《湘江评论》",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-02",
+      "age": 26,
+      "movementType": "长途移动",
+      "event": "再至北京发起驱张运动，后到上海访陈独秀",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "上海市",
+          "city": "上海市"
+        },
+        "transit": [
+          {
+            "province": "北京市",
+            "city": "北京市"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-06-18",
+      "age": 26,
+      "movementType": "原地活动",
+      "event": "在《时事新报》发表《湖南人民的自决》",
+      "coordinates": {
+        "start": {
+          "province": "上海市",
+          "city": "上海市"
+        },
+        "end": {
+          "province": "上海市",
+          "city": "上海市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-09-03",
+      "age": 26,
+      "movementType": "原地活动",
+      "event": "在《大公报》发表《湖南建设问题的根本问题——湖南共和国》",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1920-10",
+      "age": 26,
+      "movementType": "原地活动",
+      "event": "秘密组建共产党早期组织，成立长沙共产主义小组",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-07-23",
+      "age": 27,
+      "movementType": "长途移动",
+      "event": "出席中国共产党第一次全国代表大会",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "上海市",
+          "city": "上海市",
+          "district": "徐汇区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-08-03",
+      "age": 27,
+      "movementType": "长途移动",
+      "event": "中共一大在南湖游船上闭幕，中国共产党正式成立",
+      "coordinates": {
+        "start": {
+          "province": "上海市",
+          "city": "上海市",
+          "district": "徐汇区"
+        },
+        "end": {
+          "province": "浙江省",
+          "city": "嘉兴市",
+          "district": "南湖区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1921-10-10",
+      "age": 27,
+      "movementType": "原地活动",
+      "event": "发起成立中共湖南支部并任书记",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1922-09",
+      "age": 28,
+      "movementType": "原地活动",
+      "event": "在第一次国共合作中加入中国国民党",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1923-06-12",
+      "age": 29,
+      "movementType": "长途移动",
+      "event": "出席中共三大，当选为中央执行委员",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "广东省",
+          "city": "广州市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-01-20",
+      "age": 30,
+      "movementType": "原地活动",
+      "event": "出席中国国民党第一次全国代表大会",
+      "coordinates": {
+        "start": {
+          "province": "广东省",
+          "city": "广州市"
+        },
+        "end": {
+          "province": "广东省",
+          "city": "广州市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-02",
+      "age": 30,
+      "movementType": "长途移动",
+      "event": "任国民党上海执行部组织部秘书",
+      "coordinates": {
+        "start": {
+          "province": "广东省",
+          "city": "广州市"
+        },
+        "end": {
+          "province": "上海市",
+          "city": "上海市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1924-05",
+      "age": 30,
+      "movementType": "原地活动",
+      "event": "兼任中共中央组织部部长",
+      "coordinates": {
+        "start": {
+          "province": "上海市",
+          "city": "上海市"
+        },
+        "end": {
+          "province": "上海市",
+          "city": "上海市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1925-06",
+      "age": 31,
+      "movementType": "长途移动",
+      "event": "成立中共韶山支部",
+      "coordinates": {
+        "start": {
+          "province": "上海市",
+          "city": "上海市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1925-10-05",
+      "age": 31,
+      "movementType": "长途移动",
+      "event": "被荐举为国民党代理宣传部长",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "湘潭市",
+          "district": "韶山市"
+        },
+        "end": {
+          "province": "广东省",
+          "city": "广州市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1926-01-28",
+      "age": 32,
+      "movementType": "原地活动",
+      "event": "在国民党二大与蒋介石首次近距离接触",
+      "coordinates": {
+        "start": {
+          "province": "广东省",
+          "city": "广州市"
+        },
+        "end": {
+          "province": "广东省",
+          "city": "广州市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1926-03-19",
+      "age": 32,
+      "movementType": "原地活动",
+      "event": "任第六届中国国民党农民运动讲习所所长",
+      "coordinates": {
+        "start": {
+          "province": "广东省",
+          "city": "广州市"
+        },
+        "end": {
+          "province": "广东省",
+          "city": "广州市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-01-04",
+      "age": 33,
+      "movementType": "长途移动",
+      "event": "考察湘潭、湘乡、衡山、醴陵、长沙五县农民运动，历时32天",
+      "coordinates": {
+        "start": {
+          "province": "广东省",
+          "city": "广州市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "transit": [
+          {
+            "province": "湖南省",
+            "city": "湘潭市"
+          },
+          {
+            "province": "湖南省",
+            "city": "湘潭市",
+            "district": "湘乡市"
+          },
+          {
+            "province": "湖南省",
+            "city": "衡阳市",
+            "district": "衡山县"
+          },
+          {
+            "province": "湖南省",
+            "city": "株洲市",
+            "district": "醴陵市"
+          },
+          {
+            "province": "湖南省",
+            "city": "长沙市"
+          }
+        ]
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-02",
+      "age": 33,
+      "movementType": "长途移动",
+      "event": "根据考察结果写就《湖南农民运动考察报告》",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "湖北省",
+          "city": "武汉市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-08-07",
+      "age": 33,
+      "movementType": "原地活动",
+      "event": "出席八七会议，提出\"政权是由枪杆子中取得的\"著名论断",
+      "coordinates": {
+        "start": {
+          "province": "湖北省",
+          "city": "武汉市"
+        },
+        "end": {
+          "province": "湖北省",
+          "city": "武汉市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-09-09",
+      "age": 33,
+      "movementType": "长途移动",
+      "event": "领导湘赣边界秋收起义",
+      "coordinates": {
+        "start": {
+          "province": "湖北省",
+          "city": "武汉市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-09-29",
+      "age": 33,
+      "movementType": "长途移动",
+      "event": "主持\"三湾改编\"",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "萍乡市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1927-10-27",
+      "age": 33,
+      "movementType": "短途移动",
+      "event": "率领秋收起义部队到达井冈山",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "萍乡市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "吉安市",
+          "district": "井冈山市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-04-28",
+      "age": 34,
+      "movementType": "原地活动",
+      "event": "朱毛会师，朱德、陈毅率领的南昌起义余部与毛泽东领导的秋收起义部队胜利会师",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "吉安市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "吉安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-05-04",
+      "age": 34,
+      "movementType": "原地活动",
+      "event": "举行会师大会，正式宣布工农革命军第四军建立",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "吉安市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "吉安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1928-05-20",
+      "age": 34,
+      "movementType": "原地活动",
+      "event": "主持湘赣边界党的第一次代表大会，任特委书记",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "吉安市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "吉安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1929-12-28",
+      "age": 36,
+      "movementType": "长途移动",
+      "event": "主持中共红四军第九次代表大会（古田会议）",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "吉安市"
+        },
+        "end": {
+          "province": "福建省",
+          "city": "龙岩市",
+          "district": "上杭县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-01-05",
+      "age": 36,
+      "movementType": "原地活动",
+      "event": "写《星星之火，可以燎原》回信林彪",
+      "coordinates": {
+        "start": {
+          "province": "福建省",
+          "city": "龙岩市",
+          "district": "上杭县"
+        },
+        "end": {
+          "province": "福建省",
+          "city": "龙岩市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-08-23",
+      "age": 36,
+      "movementType": "长途移动",
+      "event": "红一军团与红三军团会师，成立红一方面军",
+      "coordinates": {
+        "start": {
+          "province": "福建省",
+          "city": "龙岩市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "长沙市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1930-12-30",
+      "age": 37,
+      "movementType": "长途移动",
+      "event": "第一次反\"围剿\"龙冈战役胜利，活捉敌前线总指挥张辉瓒",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "长沙市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "吉安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1931-11-07",
+      "age": 38,
+      "movementType": "短途移动",
+      "event": "中华苏维埃第一次全国代表大会召开，当选为中央执行委员会主席",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "吉安市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "赣州市",
+          "district": "瑞金市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1934-10-10",
+      "age": 40,
+      "movementType": "原地活动",
+      "event": "中央红军开始长征",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "赣州市",
+          "district": "瑞金市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "赣州市",
+          "district": "瑞金市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1934-12-12",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "通道会议，毛泽东主张放弃去湘西与红二、六军团会合的计划",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "赣州市",
+          "district": "瑞金市"
+        },
+        "end": {
+          "province": "湖南省",
+          "city": "怀化市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-01-15",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "遵义会议，增补毛泽东为中共中央政治局常委",
+      "coordinates": {
+        "start": {
+          "province": "湖南省",
+          "city": "怀化市"
+        },
+        "end": {
+          "province": "贵州省",
+          "city": "遵义市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-01-29",
+      "age": 41,
+      "movementType": "短途移动",
+      "event": "一渡赤水（土城战役失利后从土城渡过赤水河）",
+      "coordinates": {
+        "start": {
+          "province": "贵州省",
+          "city": "遵义市"
+        },
+        "end": {
+          "province": "贵州省",
+          "city": "遵义市",
+          "district": "习水县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-02-18",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "二渡赤水（从扎西东进，经太平渡、二郎滩渡过赤水河，重返黔北）",
+      "coordinates": {
+        "start": {
+          "province": "云南省",
+          "city": "昭通市",
+          "district": "威信县"
+        },
+        "end": {
+          "province": "贵州省",
+          "city": "遵义市",
+          "district": "桐梓县"
+        },
+        "transit": [
+          {
+            "province": "四川省",
+            "city": "泸州市",
+            "district": "古蔺县"
+          },
+          {
+            "province": "贵州省",
+            "city": "遵义市",
+            "district": "仁怀市"
+          }
+        ]
+      },
+      "verification": "根据史料：2月18日红一军团前卫第二师抵达太平渡，红三军团抵达二郎滩；2月20日全部渡过赤水河进入黔北；2月24日攻占桐梓县城"
+    },
+    {
+      "date": "1935-03-16",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "三渡赤水（从茅台渡河进入川南，迷惑敌军制造北渡长江假象）",
+      "coordinates": {
+        "start": {
+          "province": "贵州省",
+          "city": "遵义市",
+          "district": "仁怀市"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "泸州市",
+          "district": "古蔺县"
+        },
+        "transit": [
+          {
+            "province": "四川省",
+            "city": "泸州市",
+            "district": "古蔺县"
+          }
+        ]
+      },
+      "verification": "史料记载：3月16日红军由茅台用浮桥三渡赤水，向古蔺前进；3月19日在镇龙山与川军魏楷部接触并击溃，进入两河口地区，成功诱导蒋介石坚信红军北渡长江意图"
+    },
+    {
+      "date": "1935-03-21",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "四渡赤水（从川南回师东渡，成功跳出国军包围圈）",
+      "coordinates": {
+        "start": {
+          "province": "四川省",
+          "city": "泸州市",
+          "district": "古蔺县"
+        },
+        "end": {
+          "province": "贵州省",
+          "city": "贵阳市",
+          "district": "息烽县"
+        },
+        "transit": [
+          {
+            "province": "贵州省",
+            "city": "遵义市",
+            "district": "仁怀市"
+          },
+          {
+            "province": "四川省",
+            "city": "泸州市",
+            "district": "古蔺县"
+          },
+          {
+            "province": "贵州省",
+            "city": "遵义市",
+            "district": "习水县"
+          },
+          {
+            "province": "贵州省",
+            "city": "遵义市",
+            "district": "播州区"
+          },
+          {
+            "province": "贵州省",
+            "city": "贵阳市",
+            "district": "乌当区"
+          }
+        ]
+      },
+      "verification": "史料记载：3月21日红军由二郎滩、九溪口、太平渡东渡赤水；3月24日穿越遵义、怀仁大道继续南下；3月29日夺取乌江渡口；3月30-31日南渡乌江进入息烽西北黄冈、牛场等地，成功跳出国军包围圈"
+    },
+    {
+      "date": "1935-05-03",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "巧渡金沙江（在皎平渡渡过金沙江）",
+      "coordinates": {
+        "start": {
+          "province": "贵州省",
+          "city": "毕节市"
+        },
+        "end": {
+          "province": "云南省",
+          "city": "昭通市",
+          "district": "巧家县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-05-25",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "强渡大渡河（在安顺场渡过大渡河）",
+      "coordinates": {
+        "start": {
+          "province": "云南省",
+          "city": "昭通市"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "雅安市",
+          "district": "石棉县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-05-29",
+      "age": 41,
+      "movementType": "短途移动",
+      "event": "飞夺泸定桥",
+      "coordinates": {
+        "start": {
+          "province": "四川省",
+          "city": "雅安市",
+          "district": "石棉县"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "甘孜藏族自治州",
+          "district": "泸定县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-06-17",
+      "age": 41,
+      "movementType": "短途移动",
+      "event": "毛泽东翻越夹金山（从宝兴到小金）",
+      "coordinates": {
+        "start": {
+          "province": "四川省",
+          "city": "雅安市",
+          "district": "宝兴县"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "阿坝藏族羌族自治州",
+          "district": "小金县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-08-21",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "开始过草地（若尔盖大草原）",
+      "coordinates": {
+        "start": {
+          "province": "四川省",
+          "city": "阿坝藏族羌族自治州",
+          "district": "小金县"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "阿坝藏族羌族自治州",
+          "district": "若尔盖县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-09-12",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "俄界会议，决定将一、三军团、中央纵队改编为中国工农红军陕甘支队",
+      "coordinates": {
+        "start": {
+          "province": "四川省",
+          "city": "阿坝藏族羌族自治州",
+          "district": "若尔盖县"
+        },
+        "end": {
+          "province": "甘肃省",
+          "city": "甘南藏族自治州",
+          "district": "迭部县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-10-19",
+      "age": 41,
+      "movementType": "长途移动",
+      "event": "长征胜利结束，中央红军到达陕甘革命根据地（吴起镇）",
+      "coordinates": {
+        "start": {
+          "province": "甘肃省",
+          "city": "甘南藏族自治州",
+          "district": "迭部县"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市",
+          "district": "吴起县"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1935-12-17",
+      "age": 42,
+      "movementType": "原地活动",
+      "event": "瓦窑堡会议，制定抗日民族统一战线策略",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1936",
+      "age": 42,
+      "movementType": "原地活动",
+      "event": "任中央革命军事委员会主席",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937-01-13",
+      "age": 43,
+      "movementType": "原地活动",
+      "event": "中共中央机关正式迁驻延安，开始\"延安13年\"",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937",
+      "age": 43,
+      "movementType": "原地活动",
+      "event": "写作《实践论》和《矛盾论》",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1937-08-22",
+      "age": 43,
+      "movementType": "原地活动",
+      "event": "洛川会议，确定持久战的战略总方针",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1938-05-26",
+      "age": 44,
+      "movementType": "原地活动",
+      "event": "发表《论持久战》",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1939-10-04",
+      "age": 45,
+      "movementType": "原地活动",
+      "event": "发表《共产党人》发刊词，指出统一战线、武装斗争、党的建设是中国共产党在中国革命中战胜敌人的三个法宝",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": "https://www.12371.cn/2021/09/27/ARTI1632747810006980.shtml 共产党员网",
+      "userVerification": [
+        {
+          "username": "@DoWhat6",
+          "comment": "",
+          "date": "2025-07-11"
+        }
+      ]
+    },
+    {
+      "date": "1940-01-09",
+      "age": 46,
+      "movementType": "原地活动",
+      "event": "发表《新民主主义论》",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1942-02-01",
+      "age": 48,
+      "movementType": "原地活动",
+      "event": "整风运动全面展开，作《整顿党的作风》报告",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1942-05-02",
+      "age": 48,
+      "movementType": "原地活动",
+      "event": "延安文艺座谈会，发表《在延安文艺座谈会上的讲话》",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1943-03",
+      "age": 49,
+      "movementType": "原地活动",
+      "event": "当选中央政治局主席、中央书记处主席",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-04-23",
+      "age": 51,
+      "movementType": "原地活动",
+      "event": "中共七大，确立毛泽东思想为党的指导思想",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-08-28",
+      "age": 51,
+      "movementType": "长途移动",
+      "event": "抵达重庆开始国共谈判",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "重庆市",
+          "city": "重庆城区",
+          "district": "渝中区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1945-10-10",
+      "age": 51,
+      "movementType": "原地活动",
+      "event": "签署《双十协定》",
+      "coordinates": {
+        "start": {
+          "province": "重庆市",
+          "city": "重庆城区",
+          "district": "渝中区"
+        },
+        "end": {
+          "province": "重庆市",
+          "city": "重庆城区",
+          "district": "渝中区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1947-03-18",
+      "age": 53,
+      "movementType": "长途移动",
+      "event": "率中共中央撤离延安，开始转战陕北",
+      "coordinates": {
+        "start": {
+          "province": "重庆市",
+          "city": "重庆城区",
+          "district": "渝中区"
+        },
+        "end": {
+          "province": "陕北省",
+          "city": "延安市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1947-07-21",
+      "age": 53,
+      "movementType": "短途移动",
+      "event": "召开小河会议，确定战略反攻部署",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "延安市"
+        },
+        "end": {
+          "province": "陕西省",
+          "city": "榆林市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-05-26",
+      "age": 54,
+      "movementType": "长途移动",
+      "event": "到达西柏坡与中央工委会合",
+      "coordinates": {
+        "start": {
+          "province": "陕西省",
+          "city": "榆林市"
+        },
+        "end": {
+          "province": "河北省",
+          "city": "石家庄市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-09-12",
+      "age": 54,
+      "movementType": "原地活动",
+      "event": "指挥辽沈战役",
+      "coordinates": {
+        "start": {
+          "province": "河北省",
+          "city": "石家庄市"
+        },
+        "end": {
+          "province": "河北省",
+          "city": "石家庄市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-11-06",
+      "age": 54,
+      "movementType": "原地活动",
+      "event": "指挥淮海战役",
+      "coordinates": {
+        "start": {
+          "province": "河北省",
+          "city": "石家庄市"
+        },
+        "end": {
+          "province": "河北省",
+          "city": "石家庄市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1948-11-29",
+      "age": 54,
+      "movementType": "原地活动",
+      "event": "指挥平津战役",
+      "coordinates": {
+        "start": {
+          "province": "河北省",
+          "city": "石家庄市"
+        },
+        "end": {
+          "province": "河北省",
+          "city": "石家庄市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-03-05",
+      "age": 55,
+      "movementType": "原地活动",
+      "event": "主持中共七届二中全会，提出\"两个务必\"",
+      "coordinates": {
+        "start": {
+          "province": "河北省",
+          "city": "石家庄市"
+        },
+        "end": {
+          "province": "河北省",
+          "city": "石家庄市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-03-25",
+      "age": 55,
+      "movementType": "长途移动",
+      "event": "进驻香山",
+      "coordinates": {
+        "start": {
+          "province": "河北省",
+          "city": "石家庄市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "海淀区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-04-21",
+      "age": 55,
+      "movementType": "原地活动",
+      "event": "发布《向全国进军的命令》",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "海淀区"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "海淀区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-10-01",
+      "age": 55,
+      "movementType": "原地活动",
+      "event": "宣告中华人民共和国成立",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "海淀区"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "海淀区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1949-12-16",
+      "age": 56,
+      "movementType": "国际移动",
+      "event": "第一次出访外国，与(苏联)斯大林首次会谈",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "country": "俄罗斯",
+          "city": "莫斯科"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1950-02-14",
+      "age": 56,
+      "movementType": "原地活动",
+      "event": "签署《中苏友好同盟互助条约》",
+      "coordinates": {
+        "start": {
+          "country": "俄罗斯",
+          "city": "莫斯科"
+        },
+        "end": {
+          "country": "俄罗斯",
+          "city": "莫斯科"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1950-10-04",
+      "age": 56,
+      "movementType": "国际移动",
+      "event": "中央政治局扩大会议，作出\"抗美援朝、保家卫国\"的重大战略决策",
+      "coordinates": {
+        "start": {
+          "country": "俄罗斯",
+          "city": "莫斯科"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1954-09-27",
+      "age": 60,
+      "movementType": "原地活动",
+      "event": "当选首任中华人民共和国主席（第一届全国人民代表大会第一次会议）",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1956-04-25",
+      "age": 62,
+      "movementType": "原地活动",
+      "event": "中央政治局扩大会议，作《论十大关系》重要讲话",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1956-09-15",
+      "age": 62,
+      "movementType": "原地活动",
+      "event": "中共八大开幕，致开幕词",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1957-11-02",
+      "age": 63,
+      "movementType": "国际移动",
+      "event": "第二次也是最后一次出国访问",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市",
+          "district": "西城区"
+        },
+        "end": {
+          "country": "俄罗斯",
+          "city": "莫斯科"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1958-03-27",
+      "age": 64,
+      "movementType": "短途移动",
+      "event": "视察我国第一个（1955年）天然气工业气矿 -- 隆昌气矿",
+      "coordinates": {
+        "start": {
+          "country": "四川省",
+          "city": "成都市"
+        },
+        "end": {
+          "province": "四川省",
+          "city": "内江市",
+          "district": "隆昌市"
+        }
+      },
+      "verification": "http://scdfz.sc.gov.cn/whzh/slzc1/content_16893 四川党史 1995年中共四川省委党史研究室编著《毛泽东与四川》",
+      "userVerification": [
+        {
+          "username": "@troilus",
+          "comment": "项目作者评: 本项目的第一个 issue",
+          "date": "2025-07-01"
+        }
+      ]
+    },
+    {
+      "date": "1958-05-05",
+      "age": 64,
+      "movementType": "原地活动",
+      "event": "中共八大二次会议，通过\"鼓足干劲、力争上游、多快好省地建设社会主义\"总路线",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1958-08-23",
+      "age": 64,
+      "movementType": "长途移动",
+      "event": "开始炮击金门",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "福建省",
+          "city": "厦门市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1958-09",
+      "age": 75,
+      "movementType": "长途移动",
+      "event": "视察安徽",
+      "coordinates": {
+        "start": {
+          "province": "安徽省",
+          "city": "合肥市"
+        },
+        "end": {
+          "province": "安徽省",
+          "city": "马鞍山市"
+        }
+      },
+      "verification": "http://dangshi.people.com.cn/n/2013/1225/c85037-23945725.html"
+    },
+    {
+      "date": "1959-07-02",
+      "age": 65,
+      "movementType": "长途移动",
+      "event": "庐山会议，错误地开展\"反右倾\"斗争",
+      "coordinates": {
+        "start": {
+          "province": "福建省",
+          "city": "厦门市"
+        },
+        "end": {
+          "province": "江西省",
+          "city": "九江市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1962-01-11",
+      "age": 68,
+      "movementType": "长途移动",
+      "event": "七千人大会，初步总结\"大跃进\"经验教训",
+      "coordinates": {
+        "start": {
+          "province": "江西省",
+          "city": "九江市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1964",
+      "age": 70,
+      "movementType": "原地活动",
+      "event": "发动四清运动",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-05-16",
+      "age": 72,
+      "movementType": "原地活动",
+      "event": "中央政治局扩大会议通过\"五一六通知\"，标志文化大革命正式发动",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-08-05",
+      "age": 72,
+      "movementType": "原地活动",
+      "event": "写下《炮打司令部——我的一张大字报》",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1966-08-18",
+      "age": 72,
+      "movementType": "原地活动",
+      "event": "首次接见红卫兵，身穿军装并佩戴红卫兵袖章",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1969-04-01",
+      "age": 75,
+      "movementType": "原地活动",
+      "event": "主持中共九大，确立林彪为接班人",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1971-09-13",
+      "age": 77,
+      "movementType": "原地活动",
+      "event": "林彪坠机身亡，获悉\"九一三事件\"",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1972-02-21",
+      "age": 78,
+      "movementType": "原地活动",
+      "event": "会见美国总统尼克松，实现中美关系历史性突破",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1972-09-25",
+      "age": 78,
+      "movementType": "原地活动",
+      "event": "会见日本首相田中角荣，决定中日邦交正常化",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1975-05-03",
+      "age": 81,
+      "movementType": "原地活动",
+      "event": "最后一次主持中央政治局会议",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1976-04-07",
+      "age": 82,
+      "movementType": "原地活动",
+      "event": "根据毛泽东提议华国锋任中共中央第一副主席",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    },
+    {
+      "date": "1976-09-09",
+      "age": 82,
+      "movementType": "原地活动",
+      "event": "毛泽东心脏停止跳动，享年82岁",
+      "coordinates": {
+        "start": {
+          "province": "北京市",
+          "city": "北京市"
+        },
+        "end": {
+          "province": "北京市",
+          "city": "北京市"
+        }
+      },
+      "verification": ""
+    }
+  ]
+}
